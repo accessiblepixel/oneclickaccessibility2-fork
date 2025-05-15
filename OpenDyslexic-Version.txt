@@ -1,0 +1,1 @@
+This is jcx's modified copy of One Click Accessibility with the OpenDyslexic font added for the 'readable font'.
