@@ -1,17 +1,19 @@
-=== One Click Accessibility ===
-Contributors: pojo.me, KingYes, ariel.k, jzaltzberg, bainternet
+=== One Click Accessibility 2 Fork ===
+Contributors: jcx, pojo.me, KingYes, ariel.k, jzaltzberg, bainternet, elementor
 Tags: Accessibility, A11y, Toolbar, Tools, wcag, accessible
 Requires at least: 4.1
-Tested up to: 6.3
+Tested up to: 6.8
 Requires PHP: 5.4
-Stable tag: 2.1.0
+Stable tag: 2.2.0
 License: GPLv2 or later
 
-The One Click Accessibility toolbar is the fastest plugin to help you make your WordPress website more accessible.
+The 'One Click Accessibility' fork without the online account and GDPR implications of the Elementor version. Designed help you make your WordPress website more accessible.
+
+This fork is looked after by jcx and is currently available online at https://jcx.life/oneclickaccessibility-2-fork
 
 == Description ==
 
-The One Click Accessibility toolbar is the fastest plugin to help you make your WordPress website more accessible.
+The 'One Click Accessibility' fork without the online account and GDPR implications of the Elementor version. Designed help you make your WordPress website more accessible.
 
 While most accessibility issues can’t be addressed without directly changing your content, One Click Accessibility adds a number of helpful accessibility features with the minimum amount of setup and without the need for expert knowledge.
 
@@ -25,7 +27,7 @@ Add a toolbar toggling hat allows you to set:
 * High Contrast
 * Light Background
 * Links Underline
-* Readable Font
+* OpenDyslexic Font
 * Link to Sitemap / Feedback / Help pages
 
 **Accessibility Features:**
@@ -38,7 +40,10 @@ Add a toolbar toggling hat allows you to set:
 
 **Contributions:**
 
-Would you like to contribute to One Click Accessibility? You are more than welcome to submit your requests on the [GitHub repo](https://github.com/pojome/one-click-accessibility/). Also, if you have any notes about the code, please open a ticket on this issue tracker.
+Would you like to contribute to One Click Accessibility? You are more than welcome to submit your requests on my git repo, once I get it up and running. :)
+
+== Upgrade from the old 2.1.0 version ==
+Upgrading should be fairly simple. Deactivate the existing plugin, and then use the manual installation method and upload the zip file. Then activate the fork version, and make sure your settings are still correct - It should use existing settings from the old version.
 
 == Installation ==
 
@@ -64,6 +69,12 @@ Would you like to contribute to One Click Accessibility? You are more than welco
 4. Negative Contrast Mode
 
 == Changelog ==
+= 2.2.0 - 2025-05-16 =
+* Fix: Backported the fixes from Elementor's "Legacy" version to this version -
+* Mainly the XSS admin vulnerability, reported ([here](https://patchstack.com/database/wordpress/plugin/pojo-accessibility/vulnerability/wordpress-one-click-accessibility-plugin-3-1-0-cross-site-scripting-xss-vulnerability)
+* Changed: Changed plugin name, directory and links to disconnect it from the WordPress Plugins Repository so it can't be autoupdated
+* New: Support for the OpenDyslexic font, rather than the 'Readable Font' from earlier, to better support those with dyslexia.
+* Not tested: I'm not sure what version of PHP is required. I tested it with PHP8.2 and WordPress 6.8.1, so I updated the tested to version, but didn't touch the minimum or required php version.
 
 = 2.1.0 - 2022-12-18 =
 * New: Added custom element ID for "Skip Content" link ([#35](https://github.com/pojome/one-click-accessibility/issues/35)), ([#36](https://github.com/pojome/one-click-accessibility/issues/36))
@@ -111,7 +122,7 @@ Would you like to contribute to One Click Accessibility? You are more than welco
 * Fixed! - Triggering blur after focus to avoid auto-focus by browser on tab reactivated
 
 = 1.1.1 - 2016-02-08 =
-* Tweak! - Added more hebrew strings translate 
+* Tweak! - Added more hebrew strings translate
 * Tested up to WordPress v4.4
 
 = 1.1.0 - 2016-02-07 =

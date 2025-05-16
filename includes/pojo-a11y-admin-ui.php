@@ -1,6 +1,12 @@
 <?php
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * Class Admin
+ */
 class Pojo_A11y_Admin_UI {
 
 	const SETTINGS_SLUG = 'toplevel_page_accessibility-settings';
@@ -152,10 +158,9 @@ class Pojo_A11y_Admin_UI {
 		$current_screen = get_current_screen();
 		if ( in_array( $current_screen->id, array( self::SETTINGS_SLUG, self::TOOLBAR_SLUG ) ) ) {
 			$footer_text = sprintf(
-				/* translators: 1: One Click Accessibility, 2: Link to plugin review */
-				__( 'Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!', 'pojo-accessibility' ),
+			/* translators: 1: One Click Accessibility, 2: Link to plugin review */
+				__( '<strong>One Click Accessibily 2 Fork</strong> - Please tell your friends. Thank you :) ~ jcx', 'pojo-accessibility' ),
 				'<strong>' . __( 'One Click Accessibility', 'pojo-accessibility' ) . '</strong>',
-				'<a href="https://wordpress.org/support/plugin/pojo-accessibility/reviews/?filter=5#new-post" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a>'
 			);
 		}
 
