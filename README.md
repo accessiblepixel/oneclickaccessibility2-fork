@@ -53,19 +53,21 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and then use 
 ----
 ### Installation
 
-**Automatic Installation** (currently doesn't exist, use manual)
+**Easy Installation**
 
-1. Install using the WordPress built-in Plugin installer > Add New
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to the plugin page (under Dashboard > Accessibility)
-1. Enjoy!
+1. Go to plugins > Add New > Upload ZIP
+2. Navigate to where you downloaded the zip version (either from the website, or as a github code download) and upload it.
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. Go to the plugin page (under Dashboard > Accessibility)
+5. Enjoy!
 
 **Manual Installation**
 
 1. Extract the zip file and just drop the contents in the <code>wp-content/plugins/</code> directory of your WordPress installation
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to the plugin page (under Dashboard > Accessibility)
-1. Enjoy!
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Go to the plugin page (under Dashboard > Accessibility)
+4. Enjoy!
+
 
 #### Screenshots
 
