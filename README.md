@@ -34,7 +34,7 @@ I will do my best to keep the plugin updated, but this is the first proper fork 
 
 While most accessibility issues can’t be addressed without directly changing your content, One Click Accessibility adds a number of helpful accessibility features with the minimum amount of setup and without the need for expert knowledge.
 
-##### Accessibility Toolbar:
+#### Accessibility Toolbar:
 
 Add a toolbar toggling hat allows you to set:
 
