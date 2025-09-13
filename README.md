@@ -75,7 +75,7 @@ I'm still learning how to best handle running the fork, but issues and comments 
 Upgrading should be fairly simple. Deactivate the existing plugin, and follow either of the installation methods. Then activate the fork version, and make sure your settings are still correct - It should use existing settings from the old version.
 
 **Easy Installation**
-1. Download the ZIP file from the [website](https://jcx.life/oneclickaccessibility-2-fork/)
+1. Download the ZIP file from the [website](https://jcx.life/oneclickaccessibility-2-fork/) or github releases.
 2. Go to plugins > Add New > Upload ZIP
 3. Navigate to where you downloaded the zip version  and upload it.
 4. Activate the plugin through the 'Plugins' menu in WordPress
@@ -83,7 +83,7 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 6. Enjoy!
 
 **Manual Installation**
-1. Download the ZIP file, either from the [website](https://jcx.life/oneclickaccessibility-2-fork/)
+1. Download the ZIP file, either from the [website](https://jcx.life/oneclickaccessibility-2-fork/) or github releases.
 2. Extract the zip file and just drop the contents in the <code>wp-content/plugins/</code> directory of your WordPress installation
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Go to the plugin page (under Dashboard > Accessibility)
