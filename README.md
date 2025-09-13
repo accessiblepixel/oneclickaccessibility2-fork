@@ -5,7 +5,7 @@
 **Requires at least:** 4.1  
 **Tested up to:** 6.8  
 **Requires PHP:** 5.4  
-**Stable tag:** 2.2.0  
+**Stable tag:** 2.2.1  
 **License:** GPLv2 or any later version.
 
 ---
@@ -99,6 +99,9 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 ---
 
 ### Changelog
+2.2.1 - 2025-09-13
+* Improved: Removed nag to install Elementor plugin when activating One Cick Accessibility for the first time.
+
 2.2.0 - 2025-05-16
 * Fix: Backported the fixes from Elementor's "Legacy" version to this version  
   Mainly the XSS admin vulnerability, reported ([here](https://patchstack.com/database/wordpress/plugin/pojo-accessibility/vulnerability/wordpress-one-click-accessibility-plugin-3-1-0-cross-site-scripting-xss-vulnerability))
