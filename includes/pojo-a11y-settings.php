@@ -422,7 +422,7 @@ class Pojo_A11y_Settings {
 				'180' => __( '6', 'pojo-accessibility' ),
 				'200' => __( '7', 'pojo-accessibility' ),
 			),
-			'std' => '0',
+			'std' => '7',
 		];
 
 		$sections[] = [
