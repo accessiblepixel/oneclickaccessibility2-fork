@@ -5,7 +5,7 @@
 **Requires at least:** 4.1  
 **Tested up to:** 6.8  
 **Requires PHP:** 5.4  
-**Stable tag:** 2.2.2  
+**Stable tag:** 2.2.3  
 **License:** GPLv2 or any later version.
 
 ---
@@ -99,6 +99,11 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 ---
 
 ### Changelog
+2.2.3 - 2025-09-20
+* Improved: Control maximum zoom levels on site, thanks to [#103](https://github.com/elementor/one-click-accessibility/pull/103) by @vishal-neochrome
+* New: Added new Visual Handicap SVG graphic option, thanks to [#92](https://github.com/elementor/one-click-accessibility/pull/92) and [#94](https://github.com/elementor/one-click-accessibility/pull/94) - with a bit of fixup - thanks @T-I-G-I
+* Improved: Improved support for HTML5 and fixing some issues with validation, thanks to [#55](https://github.com/elementor/one-click-accessibility/pull/55) and [#56](https://github.com/elementor/one-click-accessibility/pull/56) thanks @julego
+
 2.2.2 - 2025-09-20
 * Fix: Grayscale mode is now working correctly, thanks to ivcreative leaving a pull request [#39](https://github.com/elementor/one-click-accessibility/pull/63) thank you for the fixes and thank you to @rainbowforgedev for getting me to check old pull requests that got closed as "deprecated" on Elementor's repo =D
 
