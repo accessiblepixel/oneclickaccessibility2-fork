@@ -1,5 +1,7 @@
 /*!
- * @author: Pojo Team
+ * @author: One Click Accessibility 2 Fork
+ * @version: 2.2.2
+ * @modified: 2025-09-20
  */
 /* global jQuery, PojoA11yOptions */
 
@@ -18,6 +20,7 @@
 			this.cache.$toolbarToolsLinks = this.cache.$toolbar.find( '.pojo-a11y-tools a.pojo-a11y-toolbar-link' );
 			this.cache.$btnToolbarToggle = this.cache.$toolbar.find( 'div.pojo-a11y-toolbar-toggle > a' );
 			this.cache.$skipToContent = $( '#pojo-a11y-skip-content' );
+			this.cache.$html = $( 'html' );
 			this.cache.$body = $( 'body' );
 		},
 
@@ -162,7 +165,7 @@
 				var currentSchema = this.variables.currentSchema;
 
 				if ( currentSchema ) {
-					this.cache.$body.removeClass( this.settings.bodyClassPrefix + currentSchema );
+					this.cache.$html.removeClass( this.settings.bodyClassPrefix + currentSchema );
 					this.getButtonByAction( currentSchema ).removeClass( 'active' );
 					this.activeActions[ currentSchema ] = false;
 
@@ -175,7 +178,7 @@
 				}
 
 				currentSchema = this.variables.currentSchema = action;
-				this.cache.$body.addClass( this.settings.bodyClassPrefix + currentSchema );
+				this.cache.$html.addClass( this.settings.bodyClassPrefix + currentSchema );
 				this.getButtonByAction( currentSchema ).addClass( 'active' );
 			}
 		},

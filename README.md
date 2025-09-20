@@ -5,7 +5,7 @@
 **Requires at least:** 4.1  
 **Tested up to:** 6.8  
 **Requires PHP:** 5.4  
-**Stable tag:** 2.2.1  
+**Stable tag:** 2.2.2  
 **License:** GPLv2 or any later version.
 
 ---
@@ -99,6 +99,10 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 ---
 
 ### Changelog
+2.2.2 - 2025-09-20
+* Fix: Grayscale mode is now working correctly, thanks to ivcreative leaving a pull request [#39](https://github.com/elementor/one-click-accessibility/pull/63) thank you for the fixes and thank you to @rainbowforgedev for getting me to check old pull requests that got closed as "deprecated" on Elementor's repo =D
+
+
 2.2.1 - 2025-09-13
 * Improved: Removed nag to install Elementor plugin when activating One Cick Accessibility for the first time.
 

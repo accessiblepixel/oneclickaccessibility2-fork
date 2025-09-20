@@ -1,0 +1,37 @@
+html {
+	//Grayscale
+	&.pojo-a11y-grayscale {
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		-webkit-filter: grayscale(1);
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		filter: gray;
+	}
+
+	//High Contrast
+	&.pojo-a11y-high-contrast body {
+		background: #000 !important;
+		@import '_high-contrast';
+	}
+
+	//Negative Contrast
+	&.pojo-a11y-negative-contrast body {
+		background: #000 !important;
+		@import '_negative-contrast';
+	}
+
+	//Light Background
+	&.pojo-a11y-light-background body {
+		&,
+		*:not(#pojo-a11y-toolbar):not(.pojo-a11y-toolbar-link) {
+			background: #fff !important;
+			color: #000 !important;
+		}
+		div#gmap,
+		div#gmap * {
+			background: initial !important;
+		}
+	}
+}
