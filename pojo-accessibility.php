@@ -5,7 +5,7 @@ Plugin URI: https://jcx.life/oneclickaccessibility-2-fork
 Description: The 'One Click Accessibility' fork without the online account and GDPR implications of the Elementor version. Designed help you make your WordPress website more accessible.
 Author: jcx
 Author URI: https://jcx.life
-Version: 2.2.1
+Version: 2.2.2
 Text Domain: oneclickaccessibility-2-fork
 Domain Path: /languages/
 */
