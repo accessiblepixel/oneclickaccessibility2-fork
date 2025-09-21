@@ -423,7 +423,7 @@ class Pojo_A11y_Settings {
 				'200' => __( '7', 'pojo-accessibility' ),
 			),
 			'std' => '7',
-			'sanitize_callback' => [ $this, 'sanitize_maximumzoom']
+			'sanitize_callback' => [ $this, 'sanitize_maximumzoom'],
 		];
 
 		$sections[] = [
