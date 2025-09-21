@@ -98,6 +98,24 @@ class Pojo_A11y_Settings {
 		];
 
 		$fields[] = [
+			'id' => 'pojo_a11y_maximum_zoom_level',
+			'title' => __( 'Maximum Text Size Steps', 'pojo-accessibility' ),
+			'type' => self::FIELD_SELECT,
+			'desc' => __( 'Define Maximum zoom level settings', 'pojo-accessibility' ),
+			'options' => [
+				'130' => __( '1 step', 'pojo-accessibility' ),
+				'140' => __( '2 steps', 'pojo-accessibility' ),
+				'150' => __( '3 steps', 'pojo-accessibility' ),
+				'160' => __( '4 steps', 'pojo-accessibility' ),
+				'170' => __( '5 steps', 'pojo-accessibility' ),
+				'180' => __( '6 steps', 'pojo-accessibility' ),
+				'200' => __( '7 steps', 'pojo-accessibility' ),
+			],
+			'std' => '200',
+			'sanitize_callback' => [ $this, 'sanitize_maximumzoom'],
+		];
+
+		$fields[] = [
 			'id'      => 'pojo_a11y_toolbar_button_grayscale',
 			'title'   => __( 'Grayscale', 'pojo-accessibility' ),
 			'type'    => self::FIELD_SELECT,
@@ -407,25 +425,6 @@ class Pojo_A11y_Settings {
 			'sanitize_callback' => [ $this, 'sanitize_expiration' ],
 		];
 
-		$fields[] = [
-			'id' => 'pojo_a11y_maximum_zoom_level',
-			'title' => __( 'Maximum Levels of Zoom', 'pojo-accessibility' ),
-			'type' => self::FIELD_SELECT,
-			'desc' => __( 'Define Maximum zoom level settings', 'pojo-accessibility' ),
-			'options' => [
-				'120' => __( '0', 'pojo-accessibility' ),
-				'130' => __( '1', 'pojo-accessibility' ),
-				'140' => __( '2', 'pojo-accessibility' ),
-				'150' => __( '3', 'pojo-accessibility' ),
-				'160' => __( '4', 'pojo-accessibility' ),
-				'170' => __( '5', 'pojo-accessibility' ),
-				'180' => __( '6', 'pojo-accessibility' ),
-				'200' => __( '7', 'pojo-accessibility' ),
-			],
-			'std' => '7',
-			'sanitize_callback' => [ $this, 'sanitize_maximumzoom'],
-		];
-
 		$sections[] = [
 			'id'     => 'section-a11y-settings',
 			'page'   => self::SETTINGS_PAGE,
@@ -613,7 +612,7 @@ class Pojo_A11y_Settings {
 		if ( empty( $input ) ) {
 			$input = [];
 		}
-		return in_array( $input, [ '120' ,'130' ,'140' ,'150' ,'160' ,'170' ,'180' , '200' ] ) ? $input : '200';
+		return in_array( $input, [ '130' ,'140' ,'150' ,'160' ,'170' ,'180' , '200' ] ) ? $input : '200';
 	}
 
 	public static function field_checkbox_list( $input ) {
