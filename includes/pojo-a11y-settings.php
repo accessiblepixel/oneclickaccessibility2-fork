@@ -613,7 +613,7 @@ class Pojo_A11y_Settings {
 		if ( empty( $input ) ) {
 			$input = [];
 		}
-		return in_array( $input, [ '0', '1' ,'2', '3', '4', '5', '6', '7' ] ) ? $input : '7';
+		return in_array( $input, [ '120' ,'130' ,'140' ,'150' ,'160' ,'170' ,'180' , '200' ] ) ? $input : '200';
 	}
 
 	public static function field_checkbox_list( $input ) {
