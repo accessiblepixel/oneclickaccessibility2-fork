@@ -423,6 +423,7 @@ class Pojo_A11y_Settings {
 				'200' => __( '7', 'pojo-accessibility' ),
 			),
 			'std' => '7',
+			'sanitize_callback' => [ $this, 'sanitize_maximumzoom']
 		];
 
 		$sections[] = [
@@ -605,8 +606,14 @@ class Pojo_A11y_Settings {
 		if ( empty( $input ) ) {
 			$input = [];
 		}
-
 		return in_array( $input, [ '1' , '6' , '12', '24', '48', '72' , '168', '720' ] ) ? $input : '12';
+	}
+
+	public function sanitize_maximumzoom( $input ) {
+		if ( empty( $input ) ) {
+			$input = [];
+		}
+		return in_array( $input, [ '0', '1' ,'2', '3', '4', '5', '6', '7' ] ) ? $input : 7;
 	}
 
 	public static function field_checkbox_list( $input ) {
