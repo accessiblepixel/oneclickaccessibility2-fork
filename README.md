@@ -1,6 +1,6 @@
 ## One Click Accessibility 2 Fork
 
-**Contributors:** jcx, pojo.me, KingYes, ariel.k, jzaltzberg, bainternet, elementor  
+**Contributors:** jcx, pojo.me, KingYes, ariel.k, jzaltzberg, bainternet, vishal-neochrome, T-I-G-I, julego, ivcreative, elementor  
 **Tags:** Accessibility, A11y, Toolbar, Tools, wcag, accessible  
 **Requires at least:** 4.1  
 **Tested up to:** 6.8  
