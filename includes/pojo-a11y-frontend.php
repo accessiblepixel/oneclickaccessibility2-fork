@@ -117,7 +117,7 @@ final class Pojo_A11y_Frontend {
 					<span class="pojo-sr-only sr-only"><?php esc_html_e( 'Open toolbar', 'pojo-accessibility' ); ?></span>
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor" width="1em">
 						<title><?php echo esc_html( $toolbar_title ); ?></title>
-						<description><?php echo esc_html( $toolbar_title ); ?></description>
+						<desc><?php echo esc_html( $toolbar_title ); ?></desc>
 						<?php echo $this->get_svg_icon( $icon ); ?>
 					</svg>
 				</a>
@@ -248,7 +248,7 @@ final class Pojo_A11y_Frontend {
 		if ( isset( $icons[ $icon ] ) ) {
 			$icon_title_html = '';
 			if ( ! empty( $icon_title ) ) {
-				$icon_title_html = '<title>' . esc_html( $icon_title ) . '</title><description>' . esc_html ( $icon_title) . '</description>';
+				$icon_title_html = '<title>' . esc_html( $icon_title ) . '</title><desc>' . esc_html ( $icon_title) . '</desc>';
 			}
 
 			return sprintf( '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">%s%s</svg>', $icon_title_html, $icons[ $icon ] );
