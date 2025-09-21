@@ -101,7 +101,8 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 ### Changelog
 2.2.4 - 2025-09-21
 * Improved: Added serialisation and sanitisation to the new option to control font size, it wasn't being validated.
-* Improved: Made the SVG icons have a description that's the same as a title. Bit of a bodge and in future may want to add a seperate field to admin to have a different description to title.
+* Improved: Made the SVG icons have a description that's the same as a title. The way I've done it is a bit of a bodge and in future may want to add a separate field to admin to have a different description to title. Thanks @mve83 on [#72](https://github.com/elementor/one-click-accessibility/issues/72) for pointing this out.
+* Improved: Made the steps for text size make more intuitive sense, and moved to 'Toolbar' page near the relevant option.
 
 2.2.3 - 2025-09-20
 * Improved: Control maximum zoom levels on site, thanks to [#103](https://github.com/elementor/one-click-accessibility/pull/103) by @vishal-neochrome
