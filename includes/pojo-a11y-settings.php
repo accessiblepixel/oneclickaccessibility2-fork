@@ -412,7 +412,7 @@ class Pojo_A11y_Settings {
 			'title' => __( 'Maximum Levels of Zoom', 'pojo-accessibility' ),
 			'type' => self::FIELD_SELECT,
 			'desc' => __( 'Define Maximum zoom level settings', 'pojo-accessibility' ),
-			'options' => array(
+			'options' => [
 				'120' => __( '0', 'pojo-accessibility' ),
 				'130' => __( '1', 'pojo-accessibility' ),
 				'140' => __( '2', 'pojo-accessibility' ),
@@ -421,7 +421,7 @@ class Pojo_A11y_Settings {
 				'170' => __( '5', 'pojo-accessibility' ),
 				'180' => __( '6', 'pojo-accessibility' ),
 				'200' => __( '7', 'pojo-accessibility' ),
-			),
+			],
 			'std' => '7',
 			'sanitize_callback' => [ $this, 'sanitize_maximumzoom'],
 		];
