@@ -1,18 +1,8 @@
 ## One Click Accessibility 2 Fork
 
-**Contributors:** jcx, pojo.me, KingYes, ariel.k, jzaltzberg, bainternet, vishal-neochrome, T-I-G-I, julego, ivcreative, elementor  
-**Tags:** Accessibility, A11y, Toolbar, Tools, wcag, accessible  
-**Requires at least:** 4.1  
-**Tested up to:** 6.8  
-**Requires PHP:** 5.4  
-**Stable tag:** 2.2.4  
-**License:** GPLv2 or any later version.
-
----
-
 The 'One Click Accessibility' fork without the online account and GDPR implications of the Elementor version. Designed help you make your WordPress website more accessible, without sacrificing privacy.
 
-This fork is looked after by jcx and is currently available online at https://jcx.life/oneclickaccessibility-2-fork
+This fork is looked after by jcx and is currently available online at https://jcx.life/oneclickaccessibility2-fork
 
 ----
 
@@ -31,6 +21,16 @@ I will do my best to keep the plugin updated, but this is the first proper fork 
 ----
 
 ### Details
+
+**Contributors:** jcx, pojo.me, KingYes, ariel.k, jzaltzberg, bainternet, vishal-neochrome, T-I-G-I, julego, ivcreative, elementor  
+**Tags:** Accessibility, A11y, Toolbar, Tools, wcag, accessible  
+**Requires at least:** 4.1  
+**Tested up to:** 6.8  
+**Requires PHP:** 5.4  
+**Stable tag:** 2.2.4  
+**License:** GPLv2 or any later version.
+
+---
 
 While most accessibility issues can’t be addressed without directly changing your content, One Click Accessibility adds a number of helpful accessibility features with the minimum amount of setup and without the need for expert knowledge.
 
@@ -75,7 +75,7 @@ I'm still learning how to best handle running the fork, but issues and comments 
 Upgrading should be fairly simple. Deactivate the existing plugin, and follow either of the installation methods. Then activate the fork version, and make sure your settings are still correct - It should use existing settings from the old version.
 
 **Easy Installation**
-1. Download the ZIP file from the [website](https://jcx.life/oneclickaccessibility-2-fork/) or github releases.
+1. Download the ZIP file from the [website](https://jcx.life/oneclickaccessibility2-fork/) or github releases.
 2. Go to plugins > Add New > Upload ZIP
 3. Navigate to where you downloaded the zip version  and upload it.
 4. Activate the plugin through the 'Plugins' menu in WordPress
@@ -83,7 +83,7 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 6. Enjoy!
 
 **Manual Installation**
-1. Download the ZIP file, either from the [website](https://jcx.life/oneclickaccessibility-2-fork/) or github releases.
+1. Download the ZIP file, either from the [website](https://jcx.life/oneclickaccessibility2-fork/) or github releases.
 2. Extract the zip file and just drop the contents in the <code>wp-content/plugins/</code> directory of your WordPress installation
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Go to the plugin page (under Dashboard > Accessibility)
