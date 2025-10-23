@@ -193,8 +193,7 @@ final class Pojo_A11y_Frontend {
 						<?php do_action( 'pojo_a11y_toolbar_after_buttons' ); ?>
 						<li class="pojo-a11y-toolbar-item">
 							<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-reset" data-action="reset" tabindex="-1" role="button">
-								<span class="pojo-a11y-toolbar-icon"><?php echo $this->get_toolbar_svg( 'reset', esc_html__( 'Reset', 'pojo-accessibility' ) ); ?></span>
-								<span class="pojo-a11y-toolbar-text"><?php esc_html_e( 'Reset', 'pojo-accessibility' ); ?></span>
+								<span class="pojo-a11y-toolbar-icon"><?php echo $this->get_toolbar_svg( 'reset', esc_html__( 'Reset', 'pojo-accessibility' ) ); ?></span><span class="pojo-a11y-toolbar-text"><?php esc_html_e( 'Reset', 'pojo-accessibility' ); ?></span>
 							</a>
 						</li>
 					</ul>
