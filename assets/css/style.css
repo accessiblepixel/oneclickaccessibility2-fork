@@ -1,4 +1,4 @@
-/*! One Click Accessibility 2 Fork v2.2.2 - 2025-09-20 */
+/*! One Click Accessibility 2 Fork v2.2.5 - 2025-10-23 */
 
 @font-face {
   font-family: "OpenDyslexic";
@@ -97,10 +97,10 @@ src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
   line-height: 1;
   text-align: center;
   text-rendering: auto;
-  vertical-align: middle;
+  /*vertical-align: middle; */
 }
 #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a .pojo-a11y-toolbar-text {
-  vertical-align: middle;
+  /*vertical-align: middle; */
 }
 body.rtl #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a svg {
   padding-left: 6px;

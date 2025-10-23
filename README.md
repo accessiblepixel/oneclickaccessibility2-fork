@@ -99,18 +99,21 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 ---
 
 ### Changelog
+2.2.5 - 2025-10-23
+* Fixed: Incorrect alignment of underlined links in the menu [#9](https://github.com/accessiblepixel/oneclickaccessibility2-fork/issues/9)
+
 2.2.4 - 2025-09-21
 * Improved: Added serialisation and sanitisation to the new option to control font size, it wasn't being validated.
-* Improved: Made the SVG icons have a description that's the same as a title. The way I've done it is a bit of a bodge and in future may want to add a separate field to admin to have a different description to title. Thanks @mve83 on [#72](https://github.com/elementor/one-click-accessibility/issues/72) for pointing this out.
+* Improved: Made the SVG icons have a description that's the same as a title. The way I've done it is a bit of a bodge and in future may want to add a separate field to admin to have a different description to title. Thanks @mve83 on [e#72](https://github.com/elementor/one-click-accessibility/issues/72) for pointing this out.
 * Improved: Made the steps for text size make more intuitive sense, and moved to 'Toolbar' page near the relevant option.
 
 2.2.3 - 2025-09-20
-* Improved: Control maximum zoom levels on site, thanks to [#103](https://github.com/elementor/one-click-accessibility/pull/103) by @vishal-neochrome
-* New: Added new Visual Handicap SVG graphic option, thanks to [#92](https://github.com/elementor/one-click-accessibility/pull/92) and [#94](https://github.com/elementor/one-click-accessibility/pull/94) - with a bit of fixup - thanks @T-I-G-I
-* Improved: Improved support for HTML5 and fixing some issues with validation, thanks to [#55](https://github.com/elementor/one-click-accessibility/pull/55) and [#56](https://github.com/elementor/one-click-accessibility/pull/56) thanks @julego
+* Improved: Control maximum zoom levels on site, thanks to [e#103](https://github.com/elementor/one-click-accessibility/pull/103) by @vishal-neochrome
+* New: Added new Visual Handicap SVG graphic option, thanks to [e#92](https://github.com/elementor/one-click-accessibility/pull/92) and [#94](https://github.com/elementor/one-click-accessibility/pull/94) - with a bit of fixup - thanks @T-I-G-I
+* Improved: Improved support for HTML5 and fixing some issues with validation, thanks to [e#55](https://github.com/elementor/one-click-accessibility/pull/55) and [e#56](https://github.com/elementor/one-click-accessibility/pull/56) thanks @julego
 
 2.2.2 - 2025-09-20
-* Fix: Grayscale mode is now working correctly, thanks to ivcreative leaving a pull request [#39](https://github.com/elementor/one-click-accessibility/pull/63) thank you for the fixes and thank you to @rainbowforgedev for getting me to check old pull requests that got closed as "deprecated" on Elementor's repo =D
+* Fix: Grayscale mode is now working correctly, thanks to ivcreative leaving a pull request [e#39](https://github.com/elementor/one-click-accessibility/pull/63) thank you for the fixes and thank you to @rainbowforgedev for getting me to check old pull requests that got closed as "deprecated" on Elementor's repo =D
 
 
 2.2.1 - 2025-09-13
@@ -129,12 +132,12 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 * Tweak: Add `role="button"` to the toggle ([#57](https://github.com/elementor/one-click-accessibility/issues/57))
 * Tweak: Changed the default icon to "One Click"
 * Fix: Remove extra quote ([Topic](https://wordpress.org/support/topic/bug-317/))
-* Fix: High Contrast and Negative Contrast still appear after disabled from the settings ([#39](https://github.com/elementor/one-click-accessibility/issues/39))
+* Fix: High Contrast and Negative Contrast still appear after disabled from the settings ([e#39](https://github.com/elementor/one-click-accessibility/issues/39))
 * Fix: Added compatibility with Twenty Twenty theme
 
 2.0.3 - 2018-05-28
 * Fix: Toolbar settings panel empty in non-English sites
-* Fix: Avoid showing Help & Feedback links if not defined ([#27](https://github.com/elementor/one-click-accessibility/issues/#27))
+* Fix: Avoid showing Help & Feedback links if not defined ([e#27](https://github.com/elementor/one-click-accessibility/issues/#27))
 
 2.0.2 - 2018-05-03
 * Fix! - Added default settings for toolbar title
