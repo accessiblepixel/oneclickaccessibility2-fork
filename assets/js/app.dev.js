@@ -1,7 +1,7 @@
 /*!
  * @author: One Click Accessibility 2 Fork
- * @version: 2.2.3
- * @modified: 2025-09-20
+ * @version: 2.2.6
+ * @modified: 2026-03-29
  */
 /* global jQuery, PojoA11yOptions */
 
