@@ -99,6 +99,9 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 ---
 
 ### Changelog
+2.2.6 - 2026-03-29
+* Fixed: If text zoom steps haven't been set, now it works at it should, and defaults to the maximum.
+
 2.2.5 - 2025-10-23
 * Fixed: Incorrect alignment of underlined links in the menu [#9](https://github.com/accessiblepixel/oneclickaccessibility2-fork/issues/9)
 
