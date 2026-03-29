@@ -1,7 +1,7 @@
 /*!
  * @author: One Click Accessibility 2 Fork
- * @version: 2.2.3
- * @modified: 2025-09-20
+ * @version: 2.2.6
+ * @modified: 2026-03-29
  */
 /* global jQuery, PojoA11yOptions */
 
@@ -26,7 +26,7 @@
 
 		settings: {
 			minFontSize: 120,
-			maxFontSize: PojoA11yOptions.maximum_zoom_level,
+			maxFontSize: PojoA11yOptions.maximum_zoom_level || 200,
 			buttonsClassPrefix: 'pojo-a11y-btn-',
 			bodyClassPrefix: 'pojo-a11y-',
 			bodyFontClassPrefix: 'pojo-a11y-resize-font-',

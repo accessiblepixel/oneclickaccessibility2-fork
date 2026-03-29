@@ -2,7 +2,7 @@
 
 The 'One Click Accessibility' fork without the online account and GDPR implications of the Elementor version. Designed help you make your WordPress website more accessible, without sacrificing privacy.
 
-This fork is looked after by jcx and is currently available online at https://jcx.life/oneclickaccessibility2-fork
+This fork is looked after by jcx and is currently available online at [https://oneclickaccessibility.com](https://oneclickaccessibility.com/)
 
 ----
 
@@ -75,7 +75,7 @@ I'm still learning how to best handle running the fork, but issues and comments 
 Upgrading should be fairly simple. Deactivate the existing plugin, and follow either of the installation methods. Then activate the fork version, and make sure your settings are still correct - It should use existing settings from the old version.
 
 **Easy Installation**
-1. Download the ZIP file from the [website](https://jcx.life/oneclickaccessibility2-fork/) or github releases.
+1. Download the ZIP file from the [website](https://oneclickaccessibility.com/latest-download.html) or github releases.
 2. Go to plugins > Add New > Upload ZIP
 3. Navigate to where you downloaded the zip version  and upload it.
 4. Activate the plugin through the 'Plugins' menu in WordPress
@@ -83,7 +83,7 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 6. Enjoy!
 
 **Manual Installation**
-1. Download the ZIP file, either from the [website](https://jcx.life/oneclickaccessibility2-fork/) or github releases.
+1. Download the ZIP file, either from the [website](https://oneclickaccessibility.com/latest-download.html)  or github releases.
 2. Extract the zip file and just drop the contents in the <code>wp-content/plugins/</code> directory of your WordPress installation
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Go to the plugin page (under Dashboard > Accessibility)
@@ -99,6 +99,9 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 ---
 
 ### Changelog
+2.2.6 - 2026-03-29
+* Fixed: If text zoom steps haven't been set, now it works at it should, and defaults to the maximum. [#8](https://github.com/accessiblepixel/oneclickaccessibility2-fork/issues/8)
+
 2.2.5 - 2025-10-23
 * Fixed: Incorrect alignment of underlined links in the menu [#9](https://github.com/accessiblepixel/oneclickaccessibility2-fork/issues/9)
 
@@ -127,9 +130,9 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 * Not tested: I'm not sure what version of PHP is required. I tested it with PHP8.2 and WordPress 6.8.1, so I updated the tested to version, but didn't touch the minimum or required php version.
 
 2.1.0 - 2022-12-18
-* New: Added custom element ID for "Skip Content" link ([#35](https://github.com/elementor/one-click-accessibility/issues/35)), ([#36](https://github.com/elementor/one-click-accessibility/issues/36))
-* Tweak: Added title for all SVG icons ([#30](https://github.com/elementor/one-click-accessibility/issues/35))
-* Tweak: Add `role="button"` to the toggle ([#57](https://github.com/elementor/one-click-accessibility/issues/57))
+* New: Added custom element ID for "Skip Content" link ([e#35](https://github.com/elementor/one-click-accessibility/issues/35)), ([e#36](https://github.com/elementor/one-click-accessibility/issues/36))
+* Tweak: Added title for all SVG icons ([e#30](https://github.com/elementor/one-click-accessibility/issues/35))
+* Tweak: Add `role="button"` to the toggle ([e#57](https://github.com/elementor/one-click-accessibility/issues/57))
 * Tweak: Changed the default icon to "One Click"
 * Fix: Remove extra quote ([Topic](https://wordpress.org/support/topic/bug-317/))
 * Fix: High Contrast and Negative Contrast still appear after disabled from the settings ([e#39](https://github.com/elementor/one-click-accessibility/issues/39))

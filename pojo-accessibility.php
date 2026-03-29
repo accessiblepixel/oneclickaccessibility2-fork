@@ -2,9 +2,9 @@
 /*
 /*
  * Plugin Name:       One Click Accessibility 2 Fork
- * Plugin URI:        https://jcx.life/oneclickaccessibility-2-fork
+ * Plugin URI:        https://oneclickaccessibility.com
  * Description:       The 'One Click Accessibility' fork without the online account and GDPR implications of the Elementor version. Designed help you make your WordPress website more accessible.
- * Version:           2.2.5
+ * Version:           2.2.6
  * Requires at least: 4.1
  * Requires PHP:      5.4
  * Tested up to:      6.8
