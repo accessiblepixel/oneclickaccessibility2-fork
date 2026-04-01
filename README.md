@@ -99,7 +99,7 @@ Upgrading should be fairly simple. Deactivate the existing plugin, and follow ei
 ---
 
 ### Changelog
-2.2.6 - 2026-04-01
+2.2.7 - 2026-04-01
 * Improved - Developer quality of life feature request, allow text input for picking colours. [#3](https://github.com/accessiblepixel.com/oneclickaccessibility2-fork/issues/3)
 * Improved - Now you can specify the size (in px) of the toolbar. Recommended settings are 160-300px. It will let you use silly option though, so test something sensble. Defaults to the original size of 180px [#12](https://github.com/accessiblepixel/oneclickaccessibility2-fork/issues/12)
 
