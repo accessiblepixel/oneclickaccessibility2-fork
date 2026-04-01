@@ -613,7 +613,15 @@ class Pojo_A11y_Settings {
 
 		return in_array( $input, [ 'enable', 'disable' ] ) ? $input : '';
 	}
+	
+	public function sanitize_color_or_text( $input ) {
+		if ( empty( $input ) ) {
+			return $input;
+		}
 
+		return in_array( $input, [ 'color', 'text' ] ) ? $input : 'color';
+	}
+	
 	public function sanitize_expiration( $input ) {
 		if ( empty( $input ) ) {
 			$input = [];
