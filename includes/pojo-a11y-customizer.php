@@ -58,6 +58,14 @@ class Pojo_A11y_Customizer {
 		];
 		
 		$fields[] = [
+			'id'          => 'a11y_toolbar_width',
+			'title'       => __( 'Size of popout toolbar', 'pojo-accessibility' ),
+			'type'        => 'text',
+			'std'         => '180px',
+			'description' => __( 'Set size of the toolbar popout, in px', 'pojo-accessibility' ),
+		];
+		
+		$fields[] = [
 			'id'          => 'a11y_bg_toolbar',
 			'title'       => __( 'Toolbar Background', 'pojo-accessibility' ),
 			'type'        => $customizer_color_mode,
