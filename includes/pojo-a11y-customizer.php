@@ -12,7 +12,7 @@ class Pojo_A11y_Customizer {
 
 	public function get_customizer_fields() {
 		$fields = [];
-
+		$customizer_options = get_option( POJO_A11Y_CUSTOMIZER_OPTIONS );
 		$fields[] = [
 			'id'          => 'a11y_toolbar_icon',
 			'title'       => __( 'Toolbar Icon', 'pojo-accessibility' ),
@@ -54,11 +54,22 @@ class Pojo_A11y_Customizer {
 			'std'         => '50px',
 			'description' => __( 'Set Toolbar top offset (Mobile)', 'pojo-accessibility' ),
 		];
-
+		
+		$fields[] = [
+			'id'          => 'a11y_colour_text_or_picker',
+			'title'       => __( 'Colour Setting', 'pojo-accessibility' ),
+			'type'        => 'select',
+			'choices'     => [
+				'color'   => __( 'Color Picker', 'pojo-accessibility' ),
+				'text' 	  => __( 'Text Entry', 'pojo-accessibility' ),
+			],
+			'std'         => 'color',
+			'description' => __( 'Set Toolbar Position', 'pojo-accessibility' ),
+		];
 		$fields[] = [
 			'id'          => 'a11y_bg_toolbar',
 			'title'       => __( 'Toolbar Background', 'pojo-accessibility' ),
-			'type'        => 'color',
+			'type'        => '$customizer_options['a11y_colour_text_or_picker']',
 			'std'         => '#ffffff',
 			'selector'    => '#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay',
 			'change_type' => 'bg_color',
@@ -68,7 +79,7 @@ class Pojo_A11y_Customizer {
 		$fields[] = [
 			'id'          => 'a11y_color_toolbar',
 			'title'       => __( 'Toolbar Color', 'pojo-accessibility' ),
-			'type'        => 'color',
+			'type'        => '$customizer_options['a11y_colour_text_or_picker']',
 			'std'         => '#333333',
 			'selector'    => '#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a, #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title',
 			'change_type' => 'color',
@@ -78,7 +89,7 @@ class Pojo_A11y_Customizer {
 		$fields[] = [
 			'id'          => 'a11y_toggle_button_bg_color',
 			'title'       => __( 'Toggle Button Background', 'pojo-accessibility' ),
-			'type'        => 'color',
+			'type'        => '$customizer_options['a11y_colour_text_or_picker']',
 			'std'         => '#4054b2',
 			'description' => __( 'Set Toolbar toggle button background color', 'pojo-accessibility' ),
 		];
@@ -86,7 +97,7 @@ class Pojo_A11y_Customizer {
 		$fields[] = [
 			'id'          => 'a11y_toggle_button_color',
 			'title'       => __( 'Toggle Button Color', 'pojo-accessibility' ),
-			'type'        => 'color',
+			'type'        => '$customizer_options['a11y_colour_text_or_picker']',
 			'std'         => '#ffffff',
 			'selector'    => '#pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a',
 			'change_type' => 'color',
@@ -96,7 +107,7 @@ class Pojo_A11y_Customizer {
 		$fields[] = [
 			'id'          => 'a11y_bg_active',
 			'title'       => __( 'Active Background', 'pojo-accessibility' ),
-			'type'        => 'color',
+			'type'        => '$customizer_options['a11y_colour_text_or_picker']',
 			'std'         => '#4054b2',
 			'selector'    => '#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a.active',
 			'change_type' => 'bg_color',
@@ -106,7 +117,7 @@ class Pojo_A11y_Customizer {
 		$fields[] = [
 			'id'          => 'a11y_color_active',
 			'title'       => __( 'Active Color', 'pojo-accessibility' ),
-			'type'        => 'color',
+			'type'        => '$customizer_options['a11y_colour_text_or_picker']',
 			'std'         => '#ffffff',
 			'selector'    => '#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a.active',
 			'change_type' => 'color',
