@@ -407,7 +407,7 @@ class Pojo_A11y_Settings {
 		];
 
 		$fields[] = [
-			'id'      => 'pojo_a11y_colour_text_or_picker',
+			'id'      => 'pojo_a11y_color_text_or_picker',
 			'title'   => __( 'Color Mode', 'pojo-accessibility' ),
 			'desc'    => __( 'How would you like to define colors in the customiser?', 'pojo-accessibility' ),
 			'type'    => self::FIELD_SELECT,
