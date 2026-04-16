@@ -407,6 +407,19 @@ class Pojo_A11y_Settings {
 		];
 
 		$fields[] = [
+			'id'      => 'pojo_a11y_color_text_or_picker',
+			'title'   => __( 'Color Mode', 'pojo-accessibility' ),
+			'desc'    => __( 'How would you like to define colors in the customiser?', 'pojo-accessibility' ),
+			'type'    => self::FIELD_SELECT,
+			'options' => [
+				'color'  => __( 'Color Picker', 'pojo-accessibility' ),
+				'text' => __( 'Text Field', 'pojo-accessibility' ),
+			],
+			'std'     => 'color',
+			'sanitize_callback' => [ $this, 'sanitize_color_or_text' ],
+		];
+
+		$fields[] = [
 			'id'      => 'pojo_a11y_save_expiration',
 			'title'   => __( 'Remember user for', 'pojo-accessibility' ),
 			'type'    => self::FIELD_SELECT,
@@ -600,7 +613,15 @@ class Pojo_A11y_Settings {
 
 		return in_array( $input, [ 'enable', 'disable' ] ) ? $input : '';
 	}
+	
+	public function sanitize_color_or_text( $input ) {
+		if ( empty( $input ) ) {
+			return $input;
+		}
 
+		return in_array( $input, [ 'color', 'text' ] ) ? $input : 'color';
+	}
+	
 	public function sanitize_expiration( $input ) {
 		if ( empty( $input ) ) {
 			$input = [];

@@ -86,6 +86,35 @@ final class Pojo_A11y_Frontend {
 		if ( empty( $toolbar_position ) || ! in_array( $toolbar_position, [ 'right', 'left' ] ) ) {
 			$toolbar_position = 'left';
 		}
+		$toolbar_width = $customizer_options['a11y_toolbar_width'];
+		if ( empty( $toolbar_width )) { 
+		    $toolbar_width = '180px';}
+		?>
+		<style>
+		<?php
+		if ($toolbar_position == 'right') { 
+		?>
+        #pojo-a11y-toolbar.pojo-a11y-toolbar-right {
+        right: -<?php echo $toolbar_width; ?>;
+        }
+        #pojo-a11y-toolbar.pojo-a11y-toolbar-right .pojo-a11y-toolbar-toggle {
+        right: <?php echo $toolbar_width; ?>;
+        }
+        <?php } 
+        if ($toolbar_position == 'left') {
+        ?>
+        #pojo-a11y-toolbar.pojo-a11y-toolbar-left {
+        left: -<?php echo $toolbar_width; ?>;
+        }
+        #pojo-a11y-toolbar.pojo-a11y-toolbar-left .pojo-a11y-toolbar-toggle {
+        left: <?php echo $toolbar_width; ?>;
+        }
+        <?php }; ?>
+        #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay {
+        width: <?php echo $toolbar_width; ?>;
+        }
+        </style>
+        <?php
 		
 		$toolbar_title = Pojo_Accessibility::$instance->settings->get_default_title_text( 'pojo_a11y_toolbar_title' );
 		$toolbar_visibility = get_option( 'pojo_a11y_toolbar' );
