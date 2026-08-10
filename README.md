@@ -1,6 +1,6 @@
 ## One Click Accessibility 2 Fork
 
-Looking for an alternative for the, Elementor Ally plugin, now it’s a cloud service? Why not the original with security fixes and a whole lot of features that people added as pulls, but were never pulled in. Greyscale mode fixed? A font to help those with Dyslexia? The ability to set a limit on text zoom?
+Looking for an alternative for the, Elementor Ally plugin, now it’s a cloud service? Why not the original with security fixes and a whole lot of features that people added as pulls, but were never pulled in. Grayscale mode fixed? A font to help those with Dyslexia? The ability to set a limit on text zoom?
 
 Presenting the One Click Accessibility 2 – Fork, a hard fork from the original Elementor plugin to preserve a simple yet useful plugin that makes sites just a little bit more accessible and a little bit easier. No plugin is an instant fix to accessibility, but this gives you a better start, and you don’t need a cloud account or to pay a subscription for such a basic thing.
 
