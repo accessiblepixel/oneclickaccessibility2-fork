@@ -7,7 +7,7 @@
  * Version:           2.2.7
  * Requires at least: 4.1
  * Requires PHP:      5.4
- * Tested up to:      6.8
+ * Tested up to:      7.0
  * Author:            jcx
  * Author URI:        https://jcx.life
  * License:           GPL v2 or later
