@@ -11,18 +11,12 @@ src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
   z-index: 9999;
 }
 #pojo-a11y-toolbar.pojo-a11y-toolbar-right {
-  -webkit-transition: right 750ms cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-transition: right 750ms cubic-bezier(0.23, 1, 0.32, 1);
-  -o-transition: right 750ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: right 750ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 #pojo-a11y-toolbar.pojo-a11y-toolbar-right.pojo-a11y-toolbar-open {
   right: 0;
 }
 #pojo-a11y-toolbar.pojo-a11y-toolbar-left {
-  -webkit-transition: left 750ms cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-transition: left 750ms cubic-bezier(0.23, 1, 0.32, 1);
-  -o-transition: left 750ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: left 750ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 #pojo-a11y-toolbar.pojo-a11y-toolbar-left.pojo-a11y-toolbar-open {
@@ -30,7 +24,6 @@ src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
 }
 #pojo-a11y-toolbar.pojo-a11y-toolbar-open .pojo-a11y-toolbar-toggle,
 #pojo-a11y-toolbar.pojo-a11y-toolbar-open .pojo-a11y-toolbar-overlay {
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle {
@@ -41,12 +34,10 @@ src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
   font-size: 200%;
   line-height: 0;
   padding: 10px;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a:hover,
 #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a:focus {
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay {
@@ -125,7 +116,6 @@ html.pojo-a11y-high-contrast body .placebo {
   line-height: normal;
 }
 html.pojo-a11y-high-contrast body * {
-  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 html.pojo-a11y-high-contrast body a,
@@ -318,7 +308,7 @@ html.pojo-a11y-high-contrast body del,
 html.pojo-a11y-high-contrast body details,
 html.pojo-a11y-high-contrast body dfn,
 html.pojo-a11y-high-contrast body dir,
-html.pojo-a11y-high-contrast body div:not(.jw-reset, [style*=background-image]),
+html.pojo-a11y-high-contrast body div:not(.jw-reset):not([style*=background-image]),
 html.pojo-a11y-high-contrast body dl,
 html.pojo-a11y-high-contrast body dt,
 html.pojo-a11y-high-contrast body em,
@@ -926,7 +916,6 @@ html.pojo-a11y-negative-contrast body .placebo {
   line-height: normal;
 }
 html.pojo-a11y-negative-contrast body * {
-  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 html.pojo-a11y-negative-contrast body a,
@@ -1119,7 +1108,7 @@ html.pojo-a11y-negative-contrast body del,
 html.pojo-a11y-negative-contrast body details,
 html.pojo-a11y-negative-contrast body dfn,
 html.pojo-a11y-negative-contrast body dir,
-html.pojo-a11y-negative-contrast body div:not(.jw-reset, [style*=background-image]),
+html.pojo-a11y-negative-contrast body div:not(.jw-reset):not([style*=background-image]),
 html.pojo-a11y-negative-contrast body dl,
 html.pojo-a11y-negative-contrast body dt,
 html.pojo-a11y-negative-contrast body em,
@@ -1470,7 +1459,7 @@ body.pojo-a11y-resize-font-200 {
   font-size: 2em !important;
 }
 body.pojo-a11y-resize-font-200 *,
-body.pojo-a11y-resize-font-200 *:not(h1,h2,h3,h4,h5,h6) {
+body.pojo-a11y-resize-font-200 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
 body.pojo-a11y-resize-font-200 h1,
@@ -1486,7 +1475,7 @@ body.pojo-a11y-resize-font-190 {
   font-size: 1.9em !important;
 }
 body.pojo-a11y-resize-font-190 *,
-body.pojo-a11y-resize-font-190 *:not(h1,h2,h3,h4,h5,h6) {
+body.pojo-a11y-resize-font-190 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
 body.pojo-a11y-resize-font-190 h1,
@@ -1502,7 +1491,7 @@ body.pojo-a11y-resize-font-180 {
   font-size: 1.8em !important;
 }
 body.pojo-a11y-resize-font-180 *,
-body.pojo-a11y-resize-font-180 *:not(h1,h2,h3,h4,h5,h6) {
+body.pojo-a11y-resize-font-180 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
 body.pojo-a11y-resize-font-180 h1,
@@ -1518,7 +1507,7 @@ body.pojo-a11y-resize-font-170 {
   font-size: 1.7em !important;
 }
 body.pojo-a11y-resize-font-170 *,
-body.pojo-a11y-resize-font-170 *:not(h1,h2,h3,h4,h5,h6) {
+body.pojo-a11y-resize-font-170 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
 body.pojo-a11y-resize-font-170 h1,
@@ -1534,7 +1523,7 @@ body.pojo-a11y-resize-font-160 {
     font-size: 1.6em !important;
 }
 body.pojo-a11y-resize-font-160 *,
-body.pojo-a11y-resize-font-160 *:not(h1,h2,h3,h4,h5,h6) {
+body.pojo-a11y-resize-font-160 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
 body.pojo-a11y-resize-font-160 h1,
@@ -1550,7 +1539,7 @@ body.pojo-a11y-resize-font-150 {
     font-size: 1.5em !important;
 }
 body.pojo-a11y-resize-font-150 *,
-body.pojo-a11y-resize-font-150 *:not(h1,h2,h3,h4,h5,h6) {
+body.pojo-a11y-resize-font-150 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
 body.pojo-a11y-resize-font-150 h1,
@@ -1566,7 +1555,7 @@ body.pojo-a11y-resize-font-140 {
     font-size: 1.4em !important;
 }
 body.pojo-a11y-resize-font-140 *,
-body.pojo-a11y-resize-font-140 *:not(h1,h2,h3,h4,h5,h6) {
+body.pojo-a11y-resize-font-140 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
 body.pojo-a11y-resize-font-140 h1,
@@ -1582,7 +1571,7 @@ body.pojo-a11y-resize-font-130{
     font-size: 1.3em !important;
 }
 body.pojo-a11y-resize-font-130 *,
-body.pojo-a11y-resize-font-130 *:not(h1,h2,h3,h4,h5,h6) {
+body.pojo-a11y-resize-font-130 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
 body.pojo-a11y-resize-font-130 h1,
@@ -1598,7 +1587,7 @@ body.pojo-a11y-resize-font-120 {
     font-size: 1.2em !important;
 }
 body.pojo-a11y-resize-font-120 *,
-body.pojo-a11y-resize-font-120 *:not(h1,h2,h3,h4,h5,h6) {
+body.pojo-a11y-resize-font-120 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
 body.pojo-a11y-resize-font-120 h1,
@@ -1659,6 +1648,7 @@ a:visited:active u, a:visited:active var {
 }
 body.pojo-a11y-links-underline a,
 body.pojo-a11y-links-underline a * {
+  -webkit-text-decoration: underline !important;
   text-decoration: underline !important;
 }
 body.pojo-a11y-readable-font,
@@ -1683,6 +1673,7 @@ body.pojo-a11y-readable-font *:not(i):not(span) {
   color: #21759B;
   z-index: 100000;
   line-height: normal;
+  -webkit-text-decoration: none;
   text-decoration: none;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 }
