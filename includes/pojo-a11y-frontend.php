@@ -40,7 +40,7 @@ final class Pojo_A11y_Frontend {
 
 		wp_register_style(
 			'pojo-a11y',
-			POJO_A11Y_ASSETS_URL . 'css/oneclickaccessibility..min.css',
+			POJO_A11Y_ASSETS_URL . 'css/oneclickaccessibility.min.css',
 			[],
 			'2.2.8'
 		);
