@@ -6,7 +6,7 @@ src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
 }
 #pojo-a11y-toolbar {
   position: fixed;
-  font-size: 20px !important;
+  font-size: 24px !important;
   line-height: 1.4;
   z-index: 9999;
 }
@@ -27,6 +27,7 @@ src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle {
+    font-size: 14px !important;
   position: absolute;
 }
 #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a {
@@ -78,7 +79,7 @@ src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
   line-height: 1;
   text-align: center;
   text-rendering: auto;
-  /*vertical-align: middle; */
+  vertical-align: middle;
 }
 #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a .pojo-a11y-toolbar-text {
   /*vertical-align: middle; */
