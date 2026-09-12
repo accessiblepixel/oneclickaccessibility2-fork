@@ -1,111 +1,181 @@
 /*! One Click Accessibility 2 Fork v2.2.8 - 2026-09-12 */
 
 @font-face {
-  font-family: "OpenDyslexic";
-src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
+    font-family: "OpenDyslexic";
+    src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
 }
+
 #pojo-a11y-toolbar {
-  position: fixed;
-  font-size: 24px !important;
-  line-height: 1.4;
-  z-index: 9999;
+    position: fixed;
+    font-size: 24px !important;
+    line-height: 1.4;
+    z-index: 9999;
 }
+
 #pojo-a11y-toolbar.pojo-a11y-toolbar-right {
-  transition: right 750ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: right 750ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 #pojo-a11y-toolbar.pojo-a11y-toolbar-right.pojo-a11y-toolbar-open {
-  right: 0;
+    right: 0;
 }
+
 #pojo-a11y-toolbar.pojo-a11y-toolbar-left {
-  transition: left 750ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: left 750ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 #pojo-a11y-toolbar.pojo-a11y-toolbar-left.pojo-a11y-toolbar-open {
-  left: 0;
+    left: 0;
 }
+
 #pojo-a11y-toolbar.pojo-a11y-toolbar-open .pojo-a11y-toolbar-toggle,
 #pojo-a11y-toolbar.pojo-a11y-toolbar-open .pojo-a11y-toolbar-overlay {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+
 #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle {
     font-size: 14px !important;
-  position: absolute;
+    position: absolute;
 }
+
 #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a {
-  display: inline-block;
-  font-size: 200%;
-  line-height: 0;
-  padding: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    font-size: 200%;
+    line-height: 0;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
+
 #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a:hover,
 #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a:focus {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+
 #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay {
-  border: 1px solid;
-  font-size: 100%;
+    border: 1px solid;
+    font-size: 100%;
 }
+
 #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title {
-  display: block;
-  line-height: 2;
-  font-weight: bold;
-  padding: 10px 15px 0;
-  margin: 0;
-}
-#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items {
-  list-style: none;
-  margin: 0;
-  padding: 10px 0;
-}
-#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items.pojo-a11y-links {
-  border-top: 1px solid;
-}
-#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a {
-  display: block;
-  padding: 10px 15px;
-  font-size: 80%;
-  line-height: 1;
-}
-#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a.active {
-  font-weight: bold;
-}
-#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a svg {
-  padding-right: 6px;
-  display: inline-block;
-  width: 1.5em;
-  font-style: normal;
-  font-weight: normal;
-  font-size: inherit;
-  line-height: 1;
-  text-align: center;
-  text-rendering: auto;
-  vertical-align: middle;
-}
-body.rtl #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a svg {
-  padding-left: 6px;
-  padding-right: 0;
-}
-@media (max-width: 767px) {
-  #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title {
-    padding: 7px 12px 0;
-  }
-  #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items {
-    padding: 7px 0;
-  }
-  #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a {
     display: block;
-    padding: 7px 12px;
-  }
+    line-height: 2;
+    font-weight: bold;
+    padding: 10px 15px 0;
+    margin: 0;
 }
+
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items.pojo-a11y-links {
+    border-top: 1px solid;
+}
+
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 80%;
+    line-height: 1;
+}
+
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a.active {
+    font-weight: bold;
+}
+
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a svg {
+    padding-right: 6px;
+    display: inline-block;
+    width: 1.5em;
+    font-style: normal;
+    font-weight: normal;
+    font-size: inherit;
+    line-height: 1;
+    text-align: center;
+    text-rendering: auto;
+    vertical-align: middle;
+}
+
+body.rtl #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a svg {
+    padding-left: 6px;
+    padding-right: 0;
+}
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+
+@media (max-width: 767px) {
+    #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title {
+        padding: 7px 12px 0;
+    }
+    
+    #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items {
+        padding: 7px 0;
+    }
+    
+    #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a {
+        display: block;
+        padding: 7px 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pojo-a11y-hidden-desktop {
+        display: inherit !important;
+    }
+    
+    .pojo-a11y-visible-desktop {
+        display: none !important ;
+    }
+
+    .pojo-a11y-visible-tablet {
+        display: inherit !important;
+    }
+    
+    .pojo-a11y-hidden-tablet {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .pojo-a11y-hidden-desktop {
+        display: inherit !important;
+    }
+
+    .pojo-a11y-visible-desktop {
+        display: none !important;
+    }
+
+    .pojo-a11y-visible-phone {
+        display: inherit !important;
+    }
+    
+    /* Use inherit to restore previous behavior */
+    .pojo-a11y-hidden-phone {
+    display: none !important;
+    }
+}
+
+/* ----------------- */
+/* Grayscale Queries */
+/* ----------------- */
+
 html.pojo-a11y-grayscale {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: gray;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray;
 }
+
+/* ------------- */
+/* High Contrast */
+/* ------------- */
 
 html.pojo-a11y-high-contrast {
     background: #000 !important;
@@ -215,7 +285,7 @@ html.pojo-a11y-high-contrast video {
     color: white !important;
 }
 
-/* bold in yellow */
+/* Bold in Yellow */
 html.pojo-a11y-high-contrast abbr,
 html.pojo-a11y-high-contrast acronym,
 html.pojo-a11y-high-contrast b,
@@ -260,7 +330,7 @@ html.pojo-a11y-high-contrast img {
 
 html.pojo-a11y-high-contrast abbr,
 html.pojo-a11y-high-contrast acronym {
-  border-bottom: 1px dotted !important;
+    border-bottom: 1px dotted !important;
 }
 
 html.pojo-a11y-high-contrast :focus {
@@ -386,16 +456,21 @@ html.pojo-a11y-high-contrast body div#gmap * {
     background: initial !important;
 }
 
+
+/* ----------------- */
 /* Negative Contrast */
+/* ----------------- */
 
 html.pojo-a11y-negative-contrast {
-  background: #000 !important;
+    background: #000 !important;
 }
+
 html.pojo-a11y-negative-contrast .placebo {
-  line-height: normal;
+    line-height: normal;
 }
+
 html.pojo-a11y-negative-contrast * {
-  box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 html.pojo-a11y-negative-contrast a,
@@ -494,6 +569,7 @@ html.pojo-a11y-negative-contrast video {
     background-color: black !important;
     color: #ffffff !important;
 }
+
 html.pojo-a11y-negative-contrast a,
 html.pojo-a11y-negative-contrast abbr,
 html.pojo-a11y-negative-contrast acronym,
@@ -544,28 +620,37 @@ html.pojo-a11y-negative-contrast td,
 html.pojo-a11y-negative-contrast th,
 html.pojo-a11y-negative-contrast tr,
 html.pojo-a11y-negative-contrast tt,
-html.pojo-a11y-negative-contrast  dt {
+html.pojo-a11y-negative-contrast dt {
     border: 1px solid #ffffff !important;
 }
 
 html.pojo-a11y-negative-contrast a > span.iconHelp:empty:after {
     content: "Help" !important;
 }
-html.pojo-a11y-negative-contrast body div#gmap,
-html.pojo-a11y-negative-contrast body div#gmap * {
-    background: initial !important;
-}
-html.pojo-a11y-light-background body,
-html.pojo-a11y-light-background body *:not(#pojo-a11y-toolbar):not(.pojo-a11y-toolbar-link) {
-    background: #fff !important;
-    color: #000 !important;
-}
-html.pojo-a11y-light-background body div#gmap,
-html.pojo-a11y-light-background body div#gmap * {
+
+html.pojo-a11y-negative-contrast div#gmap,
+html.pojo-a11y-negative-contrast div#gmap * {
     background: initial !important;
 }
 
+/* ---------------- */
+/* Light Background */
+/* ---------------- */
+
+html.pojo-a11y-light-background,
+html.pojo-a11y-light-background *:not(#pojo-a11y-toolbar):not(.pojo-a11y-toolbar-link) {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+html.pojo-a11y-light-background div#gmap,
+html.pojo-a11y-light-background div#gmap * {
+    background: initial !important;
+}
+
+/* ------------ */
 /* Resize Fonts */
+/* ------------ */
 
 /* Resize Font: 200 */
 body.pojo-a11y-resize-font-200 {
@@ -575,6 +660,7 @@ body.pojo-a11y-resize-font-200 *,
 body.pojo-a11y-resize-font-200 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
+
 body.pojo-a11y-resize-font-200 h1,
 body.pojo-a11y-resize-font-200 h2,
 body.pojo-a11y-resize-font-200 h3,
@@ -583,10 +669,12 @@ body.pojo-a11y-resize-font-200 h5,
 body.pojo-a11y-resize-font-200 h6 {
     font-size: 2em;
 }
+
 /* Resize Font: 190 */
 body.pojo-a11y-resize-font-190 {
-  font-size: 1.9em !important;
+    font-size: 1.9em !important;
 }
+
 body.pojo-a11y-resize-font-190 *,
 body.pojo-a11y-resize-font-190 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
@@ -599,10 +687,12 @@ body.pojo-a11y-resize-font-190 h5,
 body.pojo-a11y-resize-font-190 h6 {
     font-size: 2em;
 }
+
 /* Resize Font: 180 */
 body.pojo-a11y-resize-font-180 {
-  font-size: 1.8em !important;
+    font-size: 1.8em !important;
 }
+
 body.pojo-a11y-resize-font-180 *,
 body.pojo-a11y-resize-font-180 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
@@ -615,14 +705,17 @@ body.pojo-a11y-resize-font-180 h5,
 body.pojo-a11y-resize-font-180 h6 {
     font-size: 2em;
 }
+
 /* Resize Font: 170 */
 body.pojo-a11y-resize-font-170 {
-  font-size: 1.7em !important;
+    font-size: 1.7em !important;
 }
+
 body.pojo-a11y-resize-font-170 *,
 body.pojo-a11y-resize-font-170 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
+
 body.pojo-a11y-resize-font-170 h1,
 body.pojo-a11y-resize-font-170 h2,
 body.pojo-a11y-resize-font-170 h3,
@@ -635,6 +728,7 @@ body.pojo-a11y-resize-font-170 h6 {
 body.pojo-a11y-resize-font-160 {
     font-size: 1.6em !important;
 }
+
 body.pojo-a11y-resize-font-160 *,
 body.pojo-a11y-resize-font-160 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
@@ -647,14 +741,17 @@ body.pojo-a11y-resize-font-160 h5,
 body.pojo-a11y-resize-font-160 h6 {
     font-size: 2em;
 }
+
 /* Resize Font: 150 */
 body.pojo-a11y-resize-font-150 {
     font-size: 1.5em !important;
 }
+
 body.pojo-a11y-resize-font-150 *,
 body.pojo-a11y-resize-font-150 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
+
 body.pojo-a11y-resize-font-150 h1,
 body.pojo-a11y-resize-font-150 h2,
 body.pojo-a11y-resize-font-150 h3,
@@ -663,14 +760,17 @@ body.pojo-a11y-resize-font-150 h5,
 body.pojo-a11y-resize-font-150 h6 {
     font-size: 2em;
 }
+
 /* Resize Font: 140 */
 body.pojo-a11y-resize-font-140 {
     font-size: 1.4em !important;
 }
+
 body.pojo-a11y-resize-font-140 *,
 body.pojo-a11y-resize-font-140 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
+
 body.pojo-a11y-resize-font-140 h1,
 body.pojo-a11y-resize-font-140 h2,
 body.pojo-a11y-resize-font-140 h3,
@@ -679,14 +779,17 @@ body.pojo-a11y-resize-font-140 h5,
 body.pojo-a11y-resize-font-140 h6 {
     font-size: 2em;
 }
+
 /* Resize Font: 130 */
 body.pojo-a11y-resize-font-130{
     font-size: 1.3em !important;
 }
+
 body.pojo-a11y-resize-font-130 *,
 body.pojo-a11y-resize-font-130 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
+
 body.pojo-a11y-resize-font-130 h1,
 body.pojo-a11y-resize-font-130 h2,
 body.pojo-a11y-resize-font-130 h3,
@@ -695,14 +798,17 @@ body.pojo-a11y-resize-font-130 h5,
 body.pojo-a11y-resize-font-130 h6 {
     font-size: 2em;
 }
+
 /* Resize Font: 120 */
 body.pojo-a11y-resize-font-120 {
     font-size: 1.2em !important;
 }
+
 body.pojo-a11y-resize-font-120 *,
 body.pojo-a11y-resize-font-120 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-size: 1em;
 }
+
 body.pojo-a11y-resize-font-120 h1,
 body.pojo-a11y-resize-font-120 h2,
 body.pojo-a11y-resize-font-120 h3,
@@ -711,142 +817,87 @@ body.pojo-a11y-resize-font-120 h5,
 body.pojo-a11y-resize-font-120 h6 {
     font-size: 2em;
 }
-body.pojo-a11y-links-underline {
-  /* Temporarily checking selectors
-a[onclick] , a[onclick] abbr, a[onclick] acronym, a[onclick] b,
-a[onclick] basefont, a[onclick] big, a[onclick] br, a[onclick] code,
-a[onclick] div, a[onclick] em, a[onclick] font, a[onclick] h1,
-a[onclick] h2, a[onclick] h3, a[onclick] h4, a[onclick] h5, a[onclick]
-h6, a[onclick] i, a[onclick] kbd, a[onclick] small, a[onclick] span,
-a[onclick] strong, a[onclick] tt, a[onclick] u, a[onclick] var,
-a[onclick]:active , a[onclick]:active abbr, a[onclick]:active acronym,
-a[onclick]:active b, a[onclick]:active basefont, a[onclick]:active
-big, a[onclick]:active br, a[onclick]:active code, a[onclick]:active
-div, a[onclick]:active em, a[onclick]:active font, a[onclick]:active
-h1, a[onclick]:active h2, a[onclick]:active h3, a[onclick]:active h4,
-a[onclick]:active h5, a[onclick]:active h6, a[onclick]:active i,
-a[onclick]:active kbd, a[onclick]:active small, a[onclick]:active
-span, a[onclick]:active strong, a[onclick]:active tt,
-a[onclick]:active u, a[onclick]:active var {
-	text-decoration: underline !important;
-}
-a:link , a:link abbr, a:link acronym, a:link b, a:link basefont,
-a:link big, a:link br, a:link code, a:link div, a:link em, a:link
-font, a:link h1, a:link h2, a:link h3, a:link h4, a:link h5, a:link
-h6, a:link i, a:link kbd, a:link small, a:link span, a:link strong,
-a:link tt, a:link u, a:link var, a:link:active , a:link:active abbr,
-a:link:active acronym, a:link:active b, a:link:active basefont,
-a:link:active big, a:link:active br, a:link:active code, a:link:active
-div, a:link:active em, a:link:active font, a:link:active h1,
-a:link:active h2, a:link:active h3, a:link:active h4, a:link:active
-h5, a:link:active h6, a:link:active i, a:link:active kbd,
-a:link:active small, a:link:active span, a:link:active strong,
-a:link:active tt, a:link:active u, a:link:active var, a:visited ,
-a:visited abbr, a:visited acronym, a:visited b, a:visited basefont,
-a:visited big, a:visited br, a:visited code, a:visited div, a:visited
-em, a:visited font, a:visited h1, a:visited h2, a:visited h3,
-a:visited h4, a:visited h5, a:visited h6, a:visited i, a:visited kbd,
-a:visited small, a:visited span, a:visited strong, a:visited tt,
-a:visited u, a:visited var, a:visited:active , a:visited:active abbr,
-a:visited:active acronym, a:visited:active b, a:visited:active
-basefont, a:visited:active big, a:visited:active br, a:visited:active
-code, a:visited:active div, a:visited:active em, a:visited:active
-font, a:visited:active h1, a:visited:active h2, a:visited:active h3,
-a:visited:active h4, a:visited:active h5, a:visited:active h6,
-a:visited:active i, a:visited:active kbd, a:visited:active small,
-a:visited:active span, a:visited:active strong, a:visited:active tt,
-a:visited:active u, a:visited:active var {
-	text-decoration: underline !important;
-}*/
-}
+
+/* --------------- */
+/* Underline Links */
+/* --------------- */
+
 body.pojo-a11y-links-underline a,
 body.pojo-a11y-links-underline a * {
-  -webkit-text-decoration: underline !important;
-  text-decoration: underline !important;
+    -webkit-text-decoration: underline !important;
+    text-decoration: underline !important;
 }
+
+/* ------------------------------------------ */
+/* Readable Font (Replaced with OpenDyslexic) */
+/* ------------------------------------------ */
+
 body.pojo-a11y-readable-font,
 body.pojo-a11y-readable-font *:not(i):not(span) {
-  font-family: "OpenDyslexic", Verdana, Arial, Helvetica, sans-serif !important;
+    font-family: "OpenDyslexic", Verdana, Arial, Helvetica, sans-serif !important;
 }
+
+/* --------- */
+/* Skip Link */
+/* --------- */
+
 .pojo-skip-link {
-  position: absolute;
-  top: -1000em;
+    position: absolute;
+    top: -1000em;
 }
 .pojo-skip-link:focus {
-  left: 50px;
-  top: 50px;
-  height: auto;
-  width: 200px;
-  display: block;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  padding: 15px 23px 14px;
-  background-color: #F1F1F1;
-  color: #21759B;
-  z-index: 100000;
-  line-height: normal;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    left: 50px;
+    top: 50px;
+    height: auto;
+    width: 200px;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 23px 14px;
+    background-color: #F1F1F1;
+    color: #21759B;
+    z-index: 100000;
+    line-height: normal;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 }
+
 body.rtl .pojo-skip-link:focus {
-  right: 50px;
-  left: auto;
+    right: 50px;
+    left: auto;
 }
+
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .pojo-a11y-visible-phone {
-  display: none !important;
+    display: none !important;
 }
+
 .pojo-a11y-visible-tablet {
-  display: none !important;
+    display: none !important;
 }
+
 .pojo-a11y-hidden-desktop {
-  display: none !important;
+    display: none !important;
 }
+
 .pojo-a11y-visible-desktop {
   display: inherit !important;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .pojo-a11y-hidden-desktop {
-    display: inherit !important;
-  }
-  .pojo-a11y-visible-desktop {
-    display: none !important ;
-  }
-  .pojo-a11y-visible-tablet {
-    display: inherit !important;
-  }
-  .pojo-a11y-hidden-tablet {
-    display: none !important;
-  }
-}
-@media (max-width: 767px) {
-  .pojo-a11y-hidden-desktop {
-    display: inherit !important;
-  }
-  .pojo-a11y-visible-desktop {
-    display: none !important;
-  }
-  .pojo-a11y-visible-phone {
-    display: inherit !important;
-  }
-  /* Use inherit to restore previous behavior */
-  .pojo-a11y-hidden-phone {
-    display: none !important;
-  }
-}
+
 .pojo-sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
