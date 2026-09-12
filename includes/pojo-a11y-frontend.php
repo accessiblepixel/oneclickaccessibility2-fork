@@ -32,7 +32,7 @@ final class Pojo_A11y_Frontend {
 	public function enqueue_scripts() {
 		wp_register_script(
 			'pojo-a11y',
-			POJO_A11Y_ASSETS_URL . 'js/oneclickaccessibility.dev.js',
+			POJO_A11Y_ASSETS_URL . 'js/oneclickaccessibility.min.js',
 			[ 'jquery' ],
 			'2.2.8',
 			true
@@ -40,7 +40,7 @@ final class Pojo_A11y_Frontend {
 
 		wp_register_style(
 			'pojo-a11y',
-			POJO_A11Y_ASSETS_URL . 'css/oneclickaccessibility.css',
+			POJO_A11Y_ASSETS_URL . 'css/oneclickaccessibility..min.css',
 			[],
 			'2.2.8'
 		);
