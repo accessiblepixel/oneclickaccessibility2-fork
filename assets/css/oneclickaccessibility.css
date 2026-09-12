@@ -98,11 +98,6 @@
     vertical-align: middle;
 }
 
-body.rtl #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a svg {
-    padding-left: 6px;
-    padding-right: 0;
-}
-
 /* ------------- */
 /* Media Queries */
 /* ------------- */
@@ -111,11 +106,11 @@ body.rtl #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-item
     #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title {
         padding: 7px 12px 0;
     }
-    
+
     #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items {
         padding: 7px 0;
     }
-    
+
     #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a {
         display: block;
         padding: 7px 12px;
@@ -126,7 +121,7 @@ body.rtl #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-item
     .pojo-a11y-hidden-desktop {
         display: inherit !important;
     }
-    
+
     .pojo-a11y-visible-desktop {
         display: none !important ;
     }
@@ -134,7 +129,7 @@ body.rtl #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-item
     .pojo-a11y-visible-tablet {
         display: inherit !important;
     }
-    
+
     .pojo-a11y-hidden-tablet {
         display: none !important;
     }
@@ -152,7 +147,7 @@ body.rtl #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-item
     .pojo-a11y-visible-phone {
         display: inherit !important;
     }
-    
+
     /* Use inherit to restore previous behavior */
     .pojo-a11y-hidden-phone {
     display: none !important;
@@ -304,7 +299,7 @@ html.pojo-a11y-high-contrast u {
 }
 
 html.pojo-a11y-high-contrast dt {
-  border-top: thin solid grey !important;
+    border-top: thin solid grey !important;
 }
 
 /* Links in Headings */
@@ -415,41 +410,12 @@ html.pojo-a11y-high-contrast div.jwplayer span.jwcontrols {
     display: inline !important;
 }
 
-/* pointless?
-    html.pojo-a11y-high-contrast a:link.new,
-    html.pojo-a11y-high-contrast a:link.new i,
-    html.pojo-a11y-high-contrast a:link.new b,
-    html.pojo-a11y-high-contrast span.Apple-style-span {
-    color: #FFFF40 !important;
-    }
-
-    html.pojo-a11y-high-contrast body.mediawiki img.tex {
-        background: white !important;
-        background-color: white !important;
-        border: white solid 3px !important;
-    }
-    html.pojo-a11y-high-contrast a > span.iconHelp:empty:after {
-        content: "Help" !important;
-    }
-*/
-
 html.pojo-a11y-high-contrast text > tspan:first-letter,
 html.pojo-a11y-high-contrast text > tspan:first-line {
     background: inherit !important;
     background-color: inherit !important;
     color: inherit !important;
 }
-
-/* Google specific overrides?
-html.pojo-a11y-high-contrast div.sbtc div.sbsb_a li.sbsb_d div,
-html.pojo-a11y-high-contrast table.gssb_c tr.gssb_i a,
-html.pojo-a11y-high-contrast table.gssb_c tr.gssb_i b,
-html.pojo-a11y-high-contrast table.gssb_c tr.gssb_i span,
-html.pojo-a11y-high-contrast table.gssb_c tr.gssb_i td {
-    background: #003050 !important;
-    background-color: #003050 !important;
-}
-*/
 
 html.pojo-a11y-high-contrast body div#gmap,
 html.pojo-a11y-high-contrast body div#gmap * {
@@ -724,6 +690,7 @@ body.pojo-a11y-resize-font-170 h5,
 body.pojo-a11y-resize-font-170 h6 {
     font-size: 2em;
 }
+
 /* Resize Font: 160 */
 body.pojo-a11y-resize-font-160 {
     font-size: 1.6em !important;
@@ -864,11 +831,6 @@ body.pojo-a11y-readable-font *:not(i):not(span) {
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-body.rtl .pojo-skip-link:focus {
-    right: 50px;
-    left: auto;
-}
-
 *,
 ::before,
 ::after {
@@ -888,7 +850,7 @@ body.rtl .pojo-skip-link:focus {
 }
 
 .pojo-a11y-visible-desktop {
-  display: inherit !important;
+    display: inherit !important;
 }
 
 .pojo-sr-only {
