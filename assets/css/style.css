@@ -1,13 +1,12 @@
-/*! One Click Accessibility 2 Fork v2.2.7 - 2026-04-01 */
+/*! One Click Accessibility 2 Fork v2.2.8 - 2026-09-12 */
 
 @font-face {
   font-family: "OpenDyslexic";
 src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
 }
-
 #pojo-a11y-toolbar {
   position: fixed;
-  font-size: 16px !important;
+  font-size: 20px !important;
   line-height: 1.4;
   z-index: 9999;
 }
@@ -20,7 +19,6 @@ src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
 #pojo-a11y-toolbar.pojo-a11y-toolbar-right.pojo-a11y-toolbar-open {
   right: 0;
 }
-
 #pojo-a11y-toolbar.pojo-a11y-toolbar-left {
   -webkit-transition: left 750ms cubic-bezier(0.23, 1, 0.32, 1);
   -moz-transition: left 750ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -30,7 +28,6 @@ src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
 #pojo-a11y-toolbar.pojo-a11y-toolbar-left.pojo-a11y-toolbar-open {
   left: 0;
 }
-
 #pojo-a11y-toolbar.pojo-a11y-toolbar-open .pojo-a11y-toolbar-toggle,
 #pojo-a11y-toolbar.pojo-a11y-toolbar-open .pojo-a11y-toolbar-overlay {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -1468,275 +1465,149 @@ html.pojo-a11y-light-background body div#gmap,
 html.pojo-a11y-light-background body div#gmap * {
   background: initial !important;
 }
-body.pojo-a11y-resize-font-200,
-body.pojo-a11y-resize-font-200 p:not(.pojo-a11y-toolbar-title),
-body.pojo-a11y-resize-font-200 li:not(.pojo-a11y-toolbar-item),
-body.pojo-a11y-resize-font-200 label,
-body.pojo-a11y-resize-font-200 input,
-body.pojo-a11y-resize-font-200 select,
-body.pojo-a11y-resize-font-200 textarea,
-body.pojo-a11y-resize-font-200 legend,
-body.pojo-a11y-resize-font-200 code,
-body.pojo-a11y-resize-font-200 pre,
-body.pojo-a11y-resize-font-200 dd,
-body.pojo-a11y-resize-font-200 dt,
-body.pojo-a11y-resize-font-200 span,
-body.pojo-a11y-resize-font-200 blockquote {
-  font-size: 200% !important;
+/* Resize Font: 200 */
+body.pojo-a11y-resize-font-200 {
+  font-size: 2em !important;
+}
+body.pojo-a11y-resize-font-200 *,
+body.pojo-a11y-resize-font-200 *:not(h1,h2,h3,h4,h5,h6) {
+    font-size: 1em;
 }
 body.pojo-a11y-resize-font-200 h1,
 body.pojo-a11y-resize-font-200 h2,
 body.pojo-a11y-resize-font-200 h3,
 body.pojo-a11y-resize-font-200 h4,
 body.pojo-a11y-resize-font-200 h5,
-body.pojo-a11y-resize-font-200 h6,
-body.pojo-a11y-resize-font-200 h1 span,
-body.pojo-a11y-resize-font-200 h2 span,
-body.pojo-a11y-resize-font-200 h3 span,
-body.pojo-a11y-resize-font-200 h4 span,
-body.pojo-a11y-resize-font-200 h5 span,
-body.pojo-a11y-resize-font-200 h6 span {
-  font-size: 266% !important;
+body.pojo-a11y-resize-font-200 h6 {
+    font-size: 2em;
 }
-body.pojo-a11y-resize-font-190,
-body.pojo-a11y-resize-font-190 p:not(.pojo-a11y-toolbar-title),
-body.pojo-a11y-resize-font-190 li:not(.pojo-a11y-toolbar-item),
-body.pojo-a11y-resize-font-190 label,
-body.pojo-a11y-resize-font-190 input,
-body.pojo-a11y-resize-font-190 select,
-body.pojo-a11y-resize-font-190 textarea,
-body.pojo-a11y-resize-font-190 legend,
-body.pojo-a11y-resize-font-190 code,
-body.pojo-a11y-resize-font-190 pre,
-body.pojo-a11y-resize-font-190 dd,
-body.pojo-a11y-resize-font-190 dt,
-body.pojo-a11y-resize-font-190 span,
-body.pojo-a11y-resize-font-190 blockquote {
-  font-size: 190% !important;
+/* Resize Font: 190 */
+body.pojo-a11y-resize-font-190 {
+  font-size: 1.9em !important;
+}
+body.pojo-a11y-resize-font-190 *,
+body.pojo-a11y-resize-font-190 *:not(h1,h2,h3,h4,h5,h6) {
+    font-size: 1em;
 }
 body.pojo-a11y-resize-font-190 h1,
 body.pojo-a11y-resize-font-190 h2,
 body.pojo-a11y-resize-font-190 h3,
 body.pojo-a11y-resize-font-190 h4,
 body.pojo-a11y-resize-font-190 h5,
-body.pojo-a11y-resize-font-190 h6,
-body.pojo-a11y-resize-font-190 h1 span,
-body.pojo-a11y-resize-font-190 h2 span,
-body.pojo-a11y-resize-font-190 h3 span,
-body.pojo-a11y-resize-font-190 h4 span,
-body.pojo-a11y-resize-font-190 h5 span,
-body.pojo-a11y-resize-font-190 h6 span {
-  font-size: 252.70000000000002% !important;
+body.pojo-a11y-resize-font-190 h6 {
+    font-size: 2em;
 }
-body.pojo-a11y-resize-font-180,
-body.pojo-a11y-resize-font-180 p:not(.pojo-a11y-toolbar-title),
-body.pojo-a11y-resize-font-180 li:not(.pojo-a11y-toolbar-item),
-body.pojo-a11y-resize-font-180 label,
-body.pojo-a11y-resize-font-180 input,
-body.pojo-a11y-resize-font-180 select,
-body.pojo-a11y-resize-font-180 textarea,
-body.pojo-a11y-resize-font-180 legend,
-body.pojo-a11y-resize-font-180 code,
-body.pojo-a11y-resize-font-180 pre,
-body.pojo-a11y-resize-font-180 dd,
-body.pojo-a11y-resize-font-180 dt,
-body.pojo-a11y-resize-font-180 span,
-body.pojo-a11y-resize-font-180 blockquote {
-  font-size: 180% !important;
+/* Resize Font: 180 */
+body.pojo-a11y-resize-font-180 {
+  font-size: 1.8em !important;
+}
+body.pojo-a11y-resize-font-180 *,
+body.pojo-a11y-resize-font-180 *:not(h1,h2,h3,h4,h5,h6) {
+    font-size: 1em;
 }
 body.pojo-a11y-resize-font-180 h1,
 body.pojo-a11y-resize-font-180 h2,
 body.pojo-a11y-resize-font-180 h3,
 body.pojo-a11y-resize-font-180 h4,
 body.pojo-a11y-resize-font-180 h5,
-body.pojo-a11y-resize-font-180 h6,
-body.pojo-a11y-resize-font-180 h1 span,
-body.pojo-a11y-resize-font-180 h2 span,
-body.pojo-a11y-resize-font-180 h3 span,
-body.pojo-a11y-resize-font-180 h4 span,
-body.pojo-a11y-resize-font-180 h5 span,
-body.pojo-a11y-resize-font-180 h6 span {
-  font-size: 239.4% !important;
+body.pojo-a11y-resize-font-180 h6 {
+    font-size: 2em;
 }
-body.pojo-a11y-resize-font-170,
-body.pojo-a11y-resize-font-170 p:not(.pojo-a11y-toolbar-title),
-body.pojo-a11y-resize-font-170 li:not(.pojo-a11y-toolbar-item),
-body.pojo-a11y-resize-font-170 label,
-body.pojo-a11y-resize-font-170 input,
-body.pojo-a11y-resize-font-170 select,
-body.pojo-a11y-resize-font-170 textarea,
-body.pojo-a11y-resize-font-170 legend,
-body.pojo-a11y-resize-font-170 code,
-body.pojo-a11y-resize-font-170 pre,
-body.pojo-a11y-resize-font-170 dd,
-body.pojo-a11y-resize-font-170 dt,
-body.pojo-a11y-resize-font-170 span,
-body.pojo-a11y-resize-font-170 blockquote {
-  font-size: 170% !important;
+/* Resize Font: 170 */
+body.pojo-a11y-resize-font-170 {
+  font-size: 1.7em !important;
+}
+body.pojo-a11y-resize-font-170 *,
+body.pojo-a11y-resize-font-170 *:not(h1,h2,h3,h4,h5,h6) {
+    font-size: 1em;
 }
 body.pojo-a11y-resize-font-170 h1,
 body.pojo-a11y-resize-font-170 h2,
 body.pojo-a11y-resize-font-170 h3,
 body.pojo-a11y-resize-font-170 h4,
 body.pojo-a11y-resize-font-170 h5,
-body.pojo-a11y-resize-font-170 h6,
-body.pojo-a11y-resize-font-170 h1 span,
-body.pojo-a11y-resize-font-170 h2 span,
-body.pojo-a11y-resize-font-170 h3 span,
-body.pojo-a11y-resize-font-170 h4 span,
-body.pojo-a11y-resize-font-170 h5 span,
-body.pojo-a11y-resize-font-170 h6 span {
-  font-size: 226.10000000000002% !important;
+body.pojo-a11y-resize-font-170 h6 {
+    font-size: 2em;
 }
-body.pojo-a11y-resize-font-160,
-body.pojo-a11y-resize-font-160 p:not(.pojo-a11y-toolbar-title),
-body.pojo-a11y-resize-font-160 li:not(.pojo-a11y-toolbar-item),
-body.pojo-a11y-resize-font-160 label,
-body.pojo-a11y-resize-font-160 input,
-body.pojo-a11y-resize-font-160 select,
-body.pojo-a11y-resize-font-160 textarea,
-body.pojo-a11y-resize-font-160 legend,
-body.pojo-a11y-resize-font-160 code,
-body.pojo-a11y-resize-font-160 pre,
-body.pojo-a11y-resize-font-160 dd,
-body.pojo-a11y-resize-font-160 dt,
-body.pojo-a11y-resize-font-160 span,
-body.pojo-a11y-resize-font-160 blockquote {
-  font-size: 160% !important;
+/* Resize Font: 160 */
+body.pojo-a11y-resize-font-160 {
+    font-size: 1.6em !important;
+}
+body.pojo-a11y-resize-font-160 *,
+body.pojo-a11y-resize-font-160 *:not(h1,h2,h3,h4,h5,h6) {
+    font-size: 1em;
 }
 body.pojo-a11y-resize-font-160 h1,
 body.pojo-a11y-resize-font-160 h2,
 body.pojo-a11y-resize-font-160 h3,
 body.pojo-a11y-resize-font-160 h4,
 body.pojo-a11y-resize-font-160 h5,
-body.pojo-a11y-resize-font-160 h6,
-body.pojo-a11y-resize-font-160 h1 span,
-body.pojo-a11y-resize-font-160 h2 span,
-body.pojo-a11y-resize-font-160 h3 span,
-body.pojo-a11y-resize-font-160 h4 span,
-body.pojo-a11y-resize-font-160 h5 span,
-body.pojo-a11y-resize-font-160 h6 span {
-  font-size: 212.8% !important;
+body.pojo-a11y-resize-font-160 h6 {
+    font-size: 2em;
 }
-body.pojo-a11y-resize-font-150,
-body.pojo-a11y-resize-font-150 p:not(.pojo-a11y-toolbar-title),
-body.pojo-a11y-resize-font-150 li:not(.pojo-a11y-toolbar-item),
-body.pojo-a11y-resize-font-150 label,
-body.pojo-a11y-resize-font-150 input,
-body.pojo-a11y-resize-font-150 select,
-body.pojo-a11y-resize-font-150 textarea,
-body.pojo-a11y-resize-font-150 legend,
-body.pojo-a11y-resize-font-150 code,
-body.pojo-a11y-resize-font-150 pre,
-body.pojo-a11y-resize-font-150 dd,
-body.pojo-a11y-resize-font-150 dt,
-body.pojo-a11y-resize-font-150 span,
-body.pojo-a11y-resize-font-150 blockquote {
-  font-size: 150% !important;
+/* Resize Font: 150 */
+body.pojo-a11y-resize-font-150 {
+    font-size: 1.5em !important;
+}
+body.pojo-a11y-resize-font-150 *,
+body.pojo-a11y-resize-font-150 *:not(h1,h2,h3,h4,h5,h6) {
+    font-size: 1em;
 }
 body.pojo-a11y-resize-font-150 h1,
 body.pojo-a11y-resize-font-150 h2,
 body.pojo-a11y-resize-font-150 h3,
 body.pojo-a11y-resize-font-150 h4,
 body.pojo-a11y-resize-font-150 h5,
-body.pojo-a11y-resize-font-150 h6,
-body.pojo-a11y-resize-font-150 h1 span,
-body.pojo-a11y-resize-font-150 h2 span,
-body.pojo-a11y-resize-font-150 h3 span,
-body.pojo-a11y-resize-font-150 h4 span,
-body.pojo-a11y-resize-font-150 h5 span,
-body.pojo-a11y-resize-font-150 h6 span {
-  font-size: 199.5% !important;
+body.pojo-a11y-resize-font-150 h6 {
+    font-size: 2em;
 }
-body.pojo-a11y-resize-font-140,
-body.pojo-a11y-resize-font-140 p:not(.pojo-a11y-toolbar-title),
-body.pojo-a11y-resize-font-140 li:not(.pojo-a11y-toolbar-item),
-body.pojo-a11y-resize-font-140 label,
-body.pojo-a11y-resize-font-140 input,
-body.pojo-a11y-resize-font-140 select,
-body.pojo-a11y-resize-font-140 textarea,
-body.pojo-a11y-resize-font-140 legend,
-body.pojo-a11y-resize-font-140 code,
-body.pojo-a11y-resize-font-140 pre,
-body.pojo-a11y-resize-font-140 dd,
-body.pojo-a11y-resize-font-140 dt,
-body.pojo-a11y-resize-font-140 span,
-body.pojo-a11y-resize-font-140 blockquote {
-  font-size: 140% !important;
+/* Resize Font: 140 */
+body.pojo-a11y-resize-font-140 {
+    font-size: 1.4em !important;
+}
+body.pojo-a11y-resize-font-140 *,
+body.pojo-a11y-resize-font-140 *:not(h1,h2,h3,h4,h5,h6) {
+    font-size: 1em;
 }
 body.pojo-a11y-resize-font-140 h1,
 body.pojo-a11y-resize-font-140 h2,
 body.pojo-a11y-resize-font-140 h3,
 body.pojo-a11y-resize-font-140 h4,
 body.pojo-a11y-resize-font-140 h5,
-body.pojo-a11y-resize-font-140 h6,
-body.pojo-a11y-resize-font-140 h1 span,
-body.pojo-a11y-resize-font-140 h2 span,
-body.pojo-a11y-resize-font-140 h3 span,
-body.pojo-a11y-resize-font-140 h4 span,
-body.pojo-a11y-resize-font-140 h5 span,
-body.pojo-a11y-resize-font-140 h6 span {
-  font-size: 186.20000000000002% !important;
+body.pojo-a11y-resize-font-140 h6 {
+    font-size: 2em;
 }
-body.pojo-a11y-resize-font-130,
-body.pojo-a11y-resize-font-130 p:not(.pojo-a11y-toolbar-title),
-body.pojo-a11y-resize-font-130 li:not(.pojo-a11y-toolbar-item),
-body.pojo-a11y-resize-font-130 label,
-body.pojo-a11y-resize-font-130 input,
-body.pojo-a11y-resize-font-130 select,
-body.pojo-a11y-resize-font-130 textarea,
-body.pojo-a11y-resize-font-130 legend,
-body.pojo-a11y-resize-font-130 code,
-body.pojo-a11y-resize-font-130 pre,
-body.pojo-a11y-resize-font-130 dd,
-body.pojo-a11y-resize-font-130 dt,
-body.pojo-a11y-resize-font-130 span,
-body.pojo-a11y-resize-font-130 blockquote {
-  font-size: 130% !important;
+/* Resize Font: 130 */
+body.pojo-a11y-resize-font-130{
+    font-size: 1.3em !important;
+}
+body.pojo-a11y-resize-font-130 *,
+body.pojo-a11y-resize-font-130 *:not(h1,h2,h3,h4,h5,h6) {
+    font-size: 1em;
 }
 body.pojo-a11y-resize-font-130 h1,
 body.pojo-a11y-resize-font-130 h2,
 body.pojo-a11y-resize-font-130 h3,
 body.pojo-a11y-resize-font-130 h4,
 body.pojo-a11y-resize-font-130 h5,
-body.pojo-a11y-resize-font-130 h6,
-body.pojo-a11y-resize-font-130 h1 span,
-body.pojo-a11y-resize-font-130 h2 span,
-body.pojo-a11y-resize-font-130 h3 span,
-body.pojo-a11y-resize-font-130 h4 span,
-body.pojo-a11y-resize-font-130 h5 span,
-body.pojo-a11y-resize-font-130 h6 span {
-  font-size: 172.9% !important;
+body.pojo-a11y-resize-font-130 h6 {
+    font-size: 2em;
 }
-body.pojo-a11y-resize-font-120,
-body.pojo-a11y-resize-font-120 p:not(.pojo-a11y-toolbar-title),
-body.pojo-a11y-resize-font-120 li:not(.pojo-a11y-toolbar-item),
-body.pojo-a11y-resize-font-120 label,
-body.pojo-a11y-resize-font-120 input,
-body.pojo-a11y-resize-font-120 select,
-body.pojo-a11y-resize-font-120 textarea,
-body.pojo-a11y-resize-font-120 legend,
-body.pojo-a11y-resize-font-120 code,
-body.pojo-a11y-resize-font-120 pre,
-body.pojo-a11y-resize-font-120 dd,
-body.pojo-a11y-resize-font-120 dt,
-body.pojo-a11y-resize-font-120 span,
-body.pojo-a11y-resize-font-120 blockquote {
-  font-size: 120% !important;
+/* Resize Font: 120 */
+body.pojo-a11y-resize-font-120 {
+    font-size: 1.2em !important;
+}
+body.pojo-a11y-resize-font-120 *,
+body.pojo-a11y-resize-font-120 *:not(h1,h2,h3,h4,h5,h6) {
+    font-size: 1em;
 }
 body.pojo-a11y-resize-font-120 h1,
 body.pojo-a11y-resize-font-120 h2,
 body.pojo-a11y-resize-font-120 h3,
 body.pojo-a11y-resize-font-120 h4,
 body.pojo-a11y-resize-font-120 h5,
-body.pojo-a11y-resize-font-120 h6,
-body.pojo-a11y-resize-font-120 h1 span,
-body.pojo-a11y-resize-font-120 h2 span,
-body.pojo-a11y-resize-font-120 h3 span,
-body.pojo-a11y-resize-font-120 h4 span,
-body.pojo-a11y-resize-font-120 h5 span,
-body.pojo-a11y-resize-font-120 h6 span {
-  font-size: 159.60000000000002% !important;
+body.pojo-a11y-resize-font-120 h6 {
+    font-size: 2em;
 }
 body.pojo-a11y-links-underline {
   /* Temporarily checking selectors
