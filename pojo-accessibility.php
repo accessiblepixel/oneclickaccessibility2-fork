@@ -5,12 +5,12 @@
  * Plugin URI:        https://oneclickaccessibility.com
  * Description:       The 'One Click Accessibility' fork without the online account and GDPR implications of the Elementor version. Designed help you make your WordPress website more accessible.
  * Version:           2.2.8
- * Requires at least: 4.1
- * Requires PHP:      5.4
- * Tested up to:      7.0
+ * Requires at least: 6.0
+ * Requires PHP:      7.4
+ * Tested up to:      7.1
  * Author:            jcx
  * Author URI:        https://jcx.life
- * License:           GPL v2 or later
+ * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Update URI:        https://jcx.life/oneclickaccessibility-2-fork
  * Text Domain:       oneclickaccessibility-2-fork
