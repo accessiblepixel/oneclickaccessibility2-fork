@@ -32,17 +32,17 @@ final class Pojo_A11y_Frontend {
 	public function enqueue_scripts() {
 		wp_register_script(
 			'pojo-a11y',
-			POJO_A11Y_ASSETS_URL . 'js/app.min.js',
+			POJO_A11Y_ASSETS_URL . 'js/oneclickaccessibility.min.js',
 			[ 'jquery' ],
-			'1.0.0',
+			'2.2.8',
 			true
 		);
 
 		wp_register_style(
 			'pojo-a11y',
-			POJO_A11Y_ASSETS_URL . 'css/style.min.css',
+			POJO_A11Y_ASSETS_URL . 'css/oneclickaccessibility.min.css',
 			[],
-			'1.0.0'
+			'2.2.8'
 		);
 
 		wp_enqueue_script( 'pojo-a11y' );
