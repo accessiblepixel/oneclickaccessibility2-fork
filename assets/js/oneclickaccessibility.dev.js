@@ -1,7 +1,7 @@
 /*!
  * @author: One Click Accessibility 2 Fork
- * @version: 2.2.8
- * @modified: 2026-09-13
+ * @version: 2.2.6
+ * @modified: 2026-03-29
  */
 /* global jQuery, PojoA11yOptions */
 
@@ -36,7 +36,8 @@
 
 		variables: {
 			currentFontSize: 120,
-			currentSchema: null
+			currentSchema: null,
+			currentFont: null
 		},
 
 		activeActions: {},
@@ -91,7 +92,7 @@
 					return;
 				}
 
-				if ( -1 !== [ 'toggle', 'schema' ].indexOf( actionGroup ) ) {
+				if ( -1 !== [ 'toggle', 'schema', 'font' ].indexOf( actionGroup ) ) {
 					deactivate = $this.hasClass( 'active' );
 				}
 
@@ -181,8 +182,29 @@
 				}
 
 				currentSchema = this.variables.currentSchema = action;
-				this.cache.$html.addClass( this.settings.bodyClassPrefix + currentSchema );
+				this.cache.$body.addClass( this.settings.bodyClassPrefix + currentSchema );
 				this.getButtonByAction( currentSchema ).addClass( 'active' );
+			},
+			font: function( action, deactivate ) {
+				var currentFont = this.variables.currentFont;
+
+				if ( currentFont ) {
+				    console.log( currentFont )
+					this.cache.$body.removeClass( this.settings.bodyClassPrefix + currentFont );
+					this.getButtonByAction( currentFont ).removeClass( 'active' );
+					this.activeActions[ currentFont ] = false;
+
+					this.saveToLocalStorage();
+				}
+
+				if ( deactivate ) {
+					this.variables.currentFont = null;
+					return;
+				}
+
+				currentFont = this.variables.currentFont = action;
+				this.cache.$body.addClass( this.settings.bodyClassPrefix + currentFont );
+				this.getButtonByAction( currentFont ).addClass( 'active' );
 			}
 		},
 
