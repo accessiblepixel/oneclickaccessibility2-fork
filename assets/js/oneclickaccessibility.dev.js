@@ -1,7 +1,7 @@
 /*!
  * @author: One Click Accessibility 2 Fork
- * @version: 2.2.6
- * @modified: 2026-03-29
+ * @version: 2.2.8
+ * @modified: 2026-09-13
  */
 /* global jQuery, PojoA11yOptions */
 
@@ -169,6 +169,7 @@
 				var currentSchema = this.variables.currentSchema;
 
 				if ( currentSchema ) {
+				    console.log ( currentSchema );
 					this.cache.$html.removeClass( this.settings.bodyClassPrefix + currentSchema );
 					this.getButtonByAction( currentSchema ).removeClass( 'active' );
 					this.activeActions[ currentSchema ] = false;
@@ -182,14 +183,13 @@
 				}
 
 				currentSchema = this.variables.currentSchema = action;
-				this.cache.$body.addClass( this.settings.bodyClassPrefix + currentSchema );
+				this.cache.$html.addClass( this.settings.bodyClassPrefix + currentSchema );
 				this.getButtonByAction( currentSchema ).addClass( 'active' );
 			},
 			font: function( action, deactivate ) {
 				var currentFont = this.variables.currentFont;
 
 				if ( currentFont ) {
-				    console.log( currentFont )
 					this.cache.$body.removeClass( this.settings.bodyClassPrefix + currentFont );
 					this.getButtonByAction( currentFont ).removeClass( 'active' );
 					this.activeActions[ currentFont ] = false;
