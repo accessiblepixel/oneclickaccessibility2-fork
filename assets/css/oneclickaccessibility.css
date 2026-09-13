@@ -1,4 +1,4 @@
-/*! One Click Accessibility 2 Fork v2.2.8 - 2026-09-12 */
+/*! One Click Accessibility 2 Fork v2.2.8 - 2026-09-13 */
 
 @font-face {
     font-family: "OpenDyslexic";
@@ -618,22 +618,23 @@ html.pojo-a11y-light-background div#gmap * {
 /* Resize Fonts */
 /* ------------ */
 
+body.pojo-a11y-font-reset *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) { 
+    font-size: 1em; 
+}
+
+body.pojo-a11y-font-reset h1,
+body.pojo-a11y-font-reset h2,
+body.pojo-a11y-font-reset h3,
+body.pojo-a11y-font-reset h4,
+body.pojo-a11y-font-reset h5,
+body.pojo-a11y-font-reset h6 {
+    font-size: 2em;
+}
+
+
 /* Resize Font: 200 */
 body.pojo-a11y-resize-font-200 {
   font-size: 2em !important;
-}
-body.pojo-a11y-resize-font-200 *,
-body.pojo-a11y-resize-font-200 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1em;
-}
-
-body.pojo-a11y-resize-font-200 h1,
-body.pojo-a11y-resize-font-200 h2,
-body.pojo-a11y-resize-font-200 h3,
-body.pojo-a11y-resize-font-200 h4,
-body.pojo-a11y-resize-font-200 h5,
-body.pojo-a11y-resize-font-200 h6 {
-    font-size: 2em;
 }
 
 /* Resize Font: 190 */
@@ -641,35 +642,9 @@ body.pojo-a11y-resize-font-190 {
     font-size: 1.9em !important;
 }
 
-body.pojo-a11y-resize-font-190 *,
-body.pojo-a11y-resize-font-190 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1em;
-}
-body.pojo-a11y-resize-font-190 h1,
-body.pojo-a11y-resize-font-190 h2,
-body.pojo-a11y-resize-font-190 h3,
-body.pojo-a11y-resize-font-190 h4,
-body.pojo-a11y-resize-font-190 h5,
-body.pojo-a11y-resize-font-190 h6 {
-    font-size: 2em;
-}
-
 /* Resize Font: 180 */
 body.pojo-a11y-resize-font-180 {
     font-size: 1.8em !important;
-}
-
-body.pojo-a11y-resize-font-180 *,
-body.pojo-a11y-resize-font-180 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1em;
-}
-body.pojo-a11y-resize-font-180 h1,
-body.pojo-a11y-resize-font-180 h2,
-body.pojo-a11y-resize-font-180 h3,
-body.pojo-a11y-resize-font-180 h4,
-body.pojo-a11y-resize-font-180 h5,
-body.pojo-a11y-resize-font-180 h6 {
-    font-size: 2em;
 }
 
 /* Resize Font: 170 */
@@ -677,36 +652,9 @@ body.pojo-a11y-resize-font-170 {
     font-size: 1.7em !important;
 }
 
-body.pojo-a11y-resize-font-170 *,
-body.pojo-a11y-resize-font-170 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1em;
-}
-
-body.pojo-a11y-resize-font-170 h1,
-body.pojo-a11y-resize-font-170 h2,
-body.pojo-a11y-resize-font-170 h3,
-body.pojo-a11y-resize-font-170 h4,
-body.pojo-a11y-resize-font-170 h5,
-body.pojo-a11y-resize-font-170 h6 {
-    font-size: 2em;
-}
-
 /* Resize Font: 160 */
 body.pojo-a11y-resize-font-160 {
     font-size: 1.6em !important;
-}
-
-body.pojo-a11y-resize-font-160 *,
-body.pojo-a11y-resize-font-160 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1em;
-}
-body.pojo-a11y-resize-font-160 h1,
-body.pojo-a11y-resize-font-160 h2,
-body.pojo-a11y-resize-font-160 h3,
-body.pojo-a11y-resize-font-160 h4,
-body.pojo-a11y-resize-font-160 h5,
-body.pojo-a11y-resize-font-160 h6 {
-    font-size: 2em;
 }
 
 /* Resize Font: 150 */
@@ -714,75 +662,18 @@ body.pojo-a11y-resize-font-150 {
     font-size: 1.5em !important;
 }
 
-body.pojo-a11y-resize-font-150 *,
-body.pojo-a11y-resize-font-150 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1em;
-}
-
-body.pojo-a11y-resize-font-150 h1,
-body.pojo-a11y-resize-font-150 h2,
-body.pojo-a11y-resize-font-150 h3,
-body.pojo-a11y-resize-font-150 h4,
-body.pojo-a11y-resize-font-150 h5,
-body.pojo-a11y-resize-font-150 h6 {
-    font-size: 2em;
-}
-
 /* Resize Font: 140 */
 body.pojo-a11y-resize-font-140 {
     font-size: 1.4em !important;
 }
 
-body.pojo-a11y-resize-font-140 *,
-body.pojo-a11y-resize-font-140 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1em;
-}
-
-body.pojo-a11y-resize-font-140 h1,
-body.pojo-a11y-resize-font-140 h2,
-body.pojo-a11y-resize-font-140 h3,
-body.pojo-a11y-resize-font-140 h4,
-body.pojo-a11y-resize-font-140 h5,
-body.pojo-a11y-resize-font-140 h6 {
-    font-size: 2em;
-}
-
-/* Resize Font: 130 */
 body.pojo-a11y-resize-font-130{
     font-size: 1.3em !important;
-}
-
-body.pojo-a11y-resize-font-130 *,
-body.pojo-a11y-resize-font-130 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1em;
-}
-
-body.pojo-a11y-resize-font-130 h1,
-body.pojo-a11y-resize-font-130 h2,
-body.pojo-a11y-resize-font-130 h3,
-body.pojo-a11y-resize-font-130 h4,
-body.pojo-a11y-resize-font-130 h5,
-body.pojo-a11y-resize-font-130 h6 {
-    font-size: 2em;
 }
 
 /* Resize Font: 120 */
 body.pojo-a11y-resize-font-120 {
     font-size: 1.2em !important;
-}
-
-body.pojo-a11y-resize-font-120 *,
-body.pojo-a11y-resize-font-120 *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: 1em;
-}
-
-body.pojo-a11y-resize-font-120 h1,
-body.pojo-a11y-resize-font-120 h2,
-body.pojo-a11y-resize-font-120 h3,
-body.pojo-a11y-resize-font-120 h4,
-body.pojo-a11y-resize-font-120 h5,
-body.pojo-a11y-resize-font-120 h6 {
-    font-size: 2em;
 }
 
 /* --------------- */
