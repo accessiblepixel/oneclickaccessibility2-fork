@@ -5,6 +5,7 @@
     font-size: 20px !important;
     line-height: 1.4;
     z-index: 9999;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 #pojo-a11y-toolbar.pojo-a11y-toolbar-right {
@@ -336,7 +337,7 @@ html.pojo-a11y-high-contrast body div#gmap * {
 /* Negative Contrast */
 /* ----------------- */
 
-html.pojo-a11y-negative-contrast *:not(#pojo-a11y-toolbar) {
+html.pojo-a11y-negative-contrast *:not(#pojo-a11y-toolbar):not(.waveform-player *) {
     box-shadow: none !important;
     -moz-appearance: none !important;
     -moz-user-select: text !important;
@@ -345,6 +346,23 @@ html.pojo-a11y-negative-contrast *:not(#pojo-a11y-toolbar) {
     user-select: text !important;
     background-color: black !important;
     color: #ffffff;
+}
+
+html.pojo-a11y-negative-contrast .waveform-player,
+html.pojo-a11y-negative-contrast .waveform-player * {
+    --wfp-accent: white;
+    --wfp-text-color: yellow;
+    --wfp-text-secondary-color: yellow;
+}
+
+html.pojo-a11y-negative-contrast .waveform-time {
+	color: white;
+}
+
+html.pojo-a11y-negative-contrast .waveform-btn {
+	color: white;
+	background: black;
+	opacity: 1;
 }
 
 html.pojo-a11y-negative-contrast #pojo-a11y-toolbar *:not(.active) {
@@ -429,7 +447,7 @@ html.pojo-a11y-light-background div#gmap * {
 /* ------------ */
 
 /* Font Reset */
-body.pojo-a11y-font-reset { 
+body.pojo-a11y-font-reset * { 
     font-size: 1em; 
 }
 
@@ -554,8 +572,8 @@ body.pojo-a11y-readable-font *:not(i):not(span) {
         url('../fonts/opendyslexic/OpenDyslexicMono-Regular.woff') format('woff'),
         url('../fonts/opendyslexic/OpenDyslexicMono-Regular.ttf') format('truetype');
 }
-
-body.pojo-a11y-opendyslexic {
+body.pojo-a11y-opendyslexic,
+body.pojo-a11y-opendyslexic *:not(#pojo-a11y-toolbar):not(#pojo-a11y-toolbar *) {
     font-family: 'OpenDyslexic', Verdana, Arial, Helvetica, sans-serif;
     font-weight: inherit
 }
