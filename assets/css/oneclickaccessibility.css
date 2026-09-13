@@ -497,6 +497,11 @@ body.pojo-a11y-links-underline a * {
 
 body.pojo-a11y-readable-font,
 body.pojo-a11y-readable-font *:not(i):not(span) {
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+}
+
+body.pojo-a11y-opendyslexic,
+body.pojo-a11y-opendyslexic *:not(i):not(span) {
     font-family: "OpenDyslexic", Verdana, Arial, Helvetica, sans-serif !important;
 }
 
