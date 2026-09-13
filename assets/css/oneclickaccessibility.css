@@ -390,7 +390,7 @@ html.pojo-a11y-negative-contrast strong {
     color: yellow !important;
 }
 html.pojo-a11y-negative-contrast address,
-html.pojo-a11y-hegative-contrast cite,
+html.pojo-a11y-negative-contrast cite,
 html.pojo-a11y-negative-contrast dfn,
 html.pojo-a11y-negative-contrast em,
 html.pojo-a11y-negative-contrast i,
@@ -511,7 +511,7 @@ body.pojo-a11y-resize-font-140 {
     font-size: 1.4em !important;
 }
 
-body.pojo-a11y-resize-font-130{
+body.pojo-a11y-resize-font-130 {
     font-size: 1.3em !important;
 }
 
