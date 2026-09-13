@@ -102,6 +102,13 @@
 /* Media Queries */
 /* ------------- */
 
+@media (prefers-reduced-motion) {
+    #pojo-a11y-toolbar.pojo-a11y-toolbar-right,
+    #pojo-a11y-toolbar.pojo-a11y-toolbar-left {
+        transition: none;
+    }
+}
+
 @media (max-width: 767px) {
     #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title {
         padding: 7px 12px 0;
