@@ -1,4 +1,4 @@
-/*! One Click Accessibility 2 Fork v2.2.8 - 2026-09-13 */
+/*! One Click Accessibility 2 Fork v2.2.8 - 2026-09-12 */
 
 @font-face {
     font-family: "OpenDyslexic";
@@ -422,149 +422,44 @@ html.pojo-a11y-high-contrast body div#gmap * {
     background: initial !important;
 }
 
-
 /* ----------------- */
 /* Negative Contrast */
 /* ----------------- */
 
-html.pojo-a11y-negative-contrast {
-    background: #000 !important;
-}
-
-html.pojo-a11y-negative-contrast .placebo {
-    line-height: normal;
-}
-
-html.pojo-a11y-negative-contrast * {
+html.pojo-a11y-negative-contrast *:not(#pojo-a11y-toolbar) {
     box-shadow: none !important;
+    -moz-appearance: none !important;
+    -moz-user-select: text !important;
+    -webkit-user-select: text !important;
+    text-shadow: none !important;
+    user-select: text !important;
+    background-color: black !important;
+    color: #ffffff;
+}
+
+html.pojo-a11y-negative-contrast #pojo-a11y-toolbar *:not(.active) {
+    background-color: white !important;
+    color: black !important;
+}
+
+html.pojo-a11y-negative-contrast #pojo-a11y-toolbar .active * {
+    background-color: black !important;
+    color: white !important; 
 }
 
 html.pojo-a11y-negative-contrast a,
-html.pojo-a11y-negative-contrast abbr,
-html.pojo-a11y-negative-contrast acronym,
-html.pojo-a11y-negative-contrast address,
-html.pojo-a11y-negative-contrast article,
-html.pojo-a11y-negative-contrast aside,
 html.pojo-a11y-negative-contrast b,
-html.pojo-a11y-negative-contrast bdi,
-html.pojo-a11y-negative-contrast blockquote,
-html.pojo-a11y-negative-contrast body,
-html.pojo-a11y-negative-contrast button,
-html.pojo-a11y-negative-contrast canvas,
-html.pojo-a11y-negative-contrast caption,
-html.pojo-a11y-negative-contrast cite,
-html.pojo-a11y-negative-contrast code,
-html.pojo-a11y-negative-contrast col,
-html.pojo-a11y-negative-contrast colgroup,
-html.pojo-a11y-negative-contrast dd,
-html.pojo-a11y-negative-contrast details,
-html.pojo-a11y-negative-contrast dfn,
-html.pojo-a11y-negative-contrast div,
-html.pojo-a11y-negative-contrast dl,
-html.pojo-a11y-negative-contrast dt,
-html.pojo-a11y-negative-contrast em,
-html.pojo-a11y-negative-contrast embed,
-html.pojo-a11y-negative-contrast fieldset,
-html.pojo-a11y-negative-contrast figcaption,
-html.pojo-a11y-negative-contrast figure,
-html.pojo-a11y-negative-contrast footer,
-html.pojo-a11y-negative-contrast form,
 html.pojo-a11y-negative-contrast h1,
 html.pojo-a11y-negative-contrast h2,
 html.pojo-a11y-negative-contrast h3,
 html.pojo-a11y-negative-contrast h4,
 html.pojo-a11y-negative-contrast h5,
 html.pojo-a11y-negative-contrast h6,
-html.pojo-a11y-negative-contrast header,
-html.pojo-a11y-negative-contrast hgroup,
-html.pojo-a11y-negative-contrast html,
-html.pojo-a11y-negative-contrast i,
-html.pojo-a11y-negative-contrast iframe,
-html.pojo-a11y-negative-contrast img,
-html.pojo-a11y-negative-contrast input,
-html.pojo-a11y-negative-contrast label,
-html.pojo-a11y-negative-contrast legend,
-html.pojo-a11y-negative-contrast li,
-html.pojo-a11y-negative-contrast main,
-html.pojo-a11y-negative-contrast menu,
-html.pojo-a11y-negative-contrast meter,
-html.pojo-a11y-negative-contrast multicol,
-html.pojo-a11y-negative-contrast nav:not(#pojo-a11y-toolbar),
-html.pojo-a11y-negative-contrast object,
-html.pojo-a11y-negative-contrast ol,
-html.pojo-a11y-negative-contrast option,
-html.pojo-a11y-negative-contrast output,
-html.pojo-a11y-negative-contrast p,
-html.pojo-a11y-negative-contrast pre,
-html.pojo-a11y-negative-contrast progress,
-html.pojo-a11y-negative-contrast q,
-html.pojo-a11y-negative-contrast rb,
-html.pojo-a11y-negative-contrast rp,
-html.pojo-a11y-negative-contrast rt,
-html.pojo-a11y-negative-contrast ruby,
-html.pojo-a11y-negative-contrast s,
-html.pojo-a11y-negative-contrast samp,
-html.pojo-a11y-negative-contrast section,
-html.pojo-a11y-negative-contrast select,
-html.pojo-a11y-negative-contrast span,
-html.pojo-a11y-negative-contrast strike,
-html.pojo-a11y-negative-contrast strong,
-html.pojo-a11y-negative-contrast sub,
-html.pojo-a11y-negative-contrast summary,
-html.pojo-a11y-negative-contrast sup,
-html.pojo-a11y-negative-contrast svg,
-html.pojo-a11y-negative-contrast table,
-html.pojo-a11y-negative-contrast tbody,
-html.pojo-a11y-negative-contrast td,
-html.pojo-a11y-negative-contrast textarea,
-html.pojo-a11y-negative-contrast th,
-html.pojo-a11y-negative-contrast thead,
-html.pojo-a11y-negative-contrast time,
-html.pojo-a11y-negative-contrast tr,
-html.pojo-a11y-negative-contrast tt,
-html.pojo-a11y-negative-contrast u,
-html.pojo-a11y-negative-contrast ul,
-html.pojo-a11y-negative-contrast var,
-html.pojo-a11y-negative-contrast video {
-    -moz-appearance: none !important;
-    -moz-user-select: text !important;
-    -webkit-user-select: text !important;
-    text-shadow: none !important;
-    user-select: text !important;
-    background: black !important;
-    background-color: black !important;
-    color: #ffffff !important;
-}
-
-html.pojo-a11y-negative-contrast a,
-html.pojo-a11y-negative-contrast abbr,
-html.pojo-a11y-negative-contrast acronym,
-html.pojo-a11y-negative-contrast b,
-html.pojo-a11y-negative-contrast h1,
-html.pojo-a11y-negative-contrast h2,
-html.pojo-a11y-negative-contrast h3,
-html.pojo-a11y-negative-contrast h4,
-html.pojo-a11y-negative-contrast h5,
-html.pojo-a11y-negative-contrast h6 {
+html.pojo-a11y-negative-contrast strong {
     color: yellow !important;
 }
 
-html.pojo-a11y-negative-contrast address,
-html.pojo-a11y-negative-contrast cite,
-html.pojo-a11y-negative-contrast dfn,
 html.pojo-a11y-negative-contrast em,
-html.pojo-a11y-negative-contrast h1 em,
-html.pojo-a11y-negative-contrast h1 i,
-html.pojo-a11y-negative-contrast h2 em,
-html.pojo-a11y-negative-contrast h2 i,
-html.pojo-a11y-negative-contrast h3 em,
-html.pojo-a11y-negative-contrast h3 i,
-html.pojo-a11y-negative-contrast h4 em,
-html.pojo-a11y-negative-contrast h4 i,
-html.pojo-a11y-negative-contrast h5 em,
-html.pojo-a11y-negative-contrast h5 i,
-html.pojo-a11y-negative-contrast h6 em,
-html.pojo-a11y-negative-contrast h6 i,
 html.pojo-a11y-negative-contrast i,
 html.pojo-a11y-negative-contrast u {
     color: #FFFF80 !important;
@@ -572,11 +467,16 @@ html.pojo-a11y-negative-contrast u {
 
 html.pojo-a11y-negative-contrast abbr,
 html.pojo-a11y-negative-contrast acronym {
+    color: #FFFF80 !important;
     border-bottom: 1px dotted !important;
 }
+
 html.pojo-a11y-negative-contrast :focus {
     outline: thin dotted !important;
+    outline-color: yellow !important;
 }
+
+/* Interactive Elements and Tables */
 html.pojo-a11y-negative-contrast button,
 html.pojo-a11y-negative-contrast input,
 html.pojo-a11y-negative-contrast textarea,
@@ -584,9 +484,7 @@ html.pojo-a11y-negative-contrast select,
 html.pojo-a11y-negative-contrast table,
 html.pojo-a11y-negative-contrast td,
 html.pojo-a11y-negative-contrast th,
-html.pojo-a11y-negative-contrast tr,
-html.pojo-a11y-negative-contrast tt,
-html.pojo-a11y-negative-contrast dt {
+html.pojo-a11y-negative-contrast tr {
     border: 1px solid #ffffff !important;
 }
 
