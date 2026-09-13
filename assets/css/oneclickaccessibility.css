@@ -1,13 +1,8 @@
-/*! One Click Accessibility 2 Fork v2.2.8 - 2026-09-12 */
-
-@font-face {
-    font-family: "OpenDyslexic";
-    src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
-}
+/*! One Click Accessibility 2 Fork v2.2.8 - 2026-09-13 */
 
 #pojo-a11y-toolbar {
     position: fixed;
-    font-size: 24px !important;
+    font-size: 20px !important;
     line-height: 1.4;
     z-index: 9999;
 }
@@ -434,7 +429,7 @@ html.pojo-a11y-light-background div#gmap * {
 /* ------------ */
 
 /* Font Reset */
-body.pojo-a11y-font-reset *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) { 
+body.pojo-a11y-font-reset { 
     font-size: 1em; 
 }
 
@@ -491,18 +486,105 @@ body.pojo-a11y-links-underline a * {
     text-decoration: underline !important;
 }
 
-/* ------------------------------------------ */
-/* Readable Font (Replaced with OpenDyslexic) */
-/* ------------------------------------------ */
-
+/* -------------- */
+/* Readable Font  */
+/* -------------- */
 body.pojo-a11y-readable-font,
 body.pojo-a11y-readable-font *:not(i):not(span) {
     font-family: Verdana, Arial, Helvetica, sans-serif !important;
 }
 
-body.pojo-a11y-opendyslexic,
-body.pojo-a11y-opendyslexic *:not(i):not(span) {
-    font-family: "OpenDyslexic", Verdana, Arial, Helvetica, sans-serif !important;
+/* ----------------- */
+/* OpenDyslexic Font */
+/* ----------------- */
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+        local('OpenDyslexic-Regular'),
+        local('OpenDyslexic'),
+        url('../fonts/opendyslexic/OpenDyslexic-Regular.woff2') format('woff2'),
+        url('../fonts/opendyslexic/OpenDyslexic-Regular.woff') format('woff'),
+        url('../fonts/opendyslexic/OpenDyslexic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    font-style: italic;
+    font-weight: 400;
+    src: 
+        local('OpenDyslexic-Italic'),
+        url('../fonts/opendyslexic/OpenDyslexic-Italic.woff2') format('woff2'),
+        url('../fonts/opendyslexic/OpenDyslexic-Italic.woff') format('woff'),
+        url('../fonts/opendyslexic/OpenDyslexic-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+        local('OpenDyslexic-Bold'),
+        url('../fonts/opendyslexic/OpenDyslexic-Bold.woff2') format('woff2'),
+        url('../fonts/opendyslexic/OpenDyslexic-Bold.woff') format('woff'),
+        url('../fonts/opendyslexic/OpenDyslexic-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    font-style: italic;
+    font-weight: 700;
+    src: 
+        local('OpenDyslexic-BoldItalic'),
+        url('../fonts/opendyslexic/OpenDyslexic-BoldItalic.woff2') format('woff2'),
+        url('../fonts/opendyslexic/OpenDyslexic-BoldItalic.woff') format('woff'),
+        url('../fonts/opendyslexic/OpenDyslexic-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenDyslexic Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+        local('OpenDyslexicMono'),
+        local('OpenDyslexic Mono'),
+        url('../fonts/opendyslexic/OpenDyslexicMono-Regular.woff2') format('woff2'),
+        url('../fonts/opendyslexic/OpenDyslexicMono-Regular.woff') format('woff'),
+        url('../fonts/opendyslexic/OpenDyslexicMono-Regular.ttf') format('truetype');
+}
+
+body.pojo-a11y-opendyslexic {
+    font-family: 'OpenDyslexic', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: inherit
+}
+
+/* Apply to headings */
+body.pojo-a11y-opendyslexic h1,
+body.pojo-a11y-opendyslexic h2,
+body.pojo-a11y-opendyslexic h3,
+body.pojo-a11y-opendyslexic h4,
+body.pojo-a11y-opendyslexic h5,
+body.pojo-a11y-opendyslexic h6 {
+    font-family: "OpenDyslexic", Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/* Apply to code blocks and inline code */
+body.pojo-a11y-opendyslexic code, 
+body.pojo-a11y-opendyslexic pre {
+    font-family: 'OpenDyslexic Mono', 'Courier New', Courier, monospace !important
+}
+
+/* Apply specific styles for different contexts */
+body.pojo-a11y-opendyslexic strong {
+    font-weight: 700;
+}
+
+body.pojo-a11y-opendyslexic em, 
+body.pojo-a11y-opendyslexic i {
+    font-style: italic;
 }
 
 /* --------- */
