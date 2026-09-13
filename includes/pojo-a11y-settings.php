@@ -227,6 +227,28 @@ class Pojo_A11y_Settings {
 
 		$fields[] = [
 			'id'      => 'pojo_a11y_toolbar_button_readable_font',
+			'title'   => __( 'Readable Font', 'pojo-accessibility' ),
+			'type'    => self::FIELD_SELECT,
+			'class'   => $toolbar_options_classes,
+			'options' => [
+				'enable'  => __( 'Enable', 'pojo-accessibility' ),
+				'disable' => __( 'Disable', 'pojo-accessibility' ),
+			],
+			'std'     => 'enable',
+			'sanitize_callback' => [ $this, 'sanitize_enabled_disabled' ],
+		];
+		
+		$fields[] = [
+			'id'    => 'pojo_a11y_toolbar_button_readable_font_title',
+			'title' => __( 'Readable Font Title', 'pojo-accessibility' ),
+			'type'  => self::FIELD_TEXT,
+			'class' => $toolbar_options_classes . ' pojo-settings-child-row',
+			'std'   => __( 'Readable Font', 'pojo-accessibility' ),
+			'sanitize_callback' => 'sanitize_text_field',
+		];
+		
+		$fields[] = [
+			'id'      => 'pojo_a11y_toolbar_button_opendyslexic',
 			'title'   => __( 'OpenDyslexic Font', 'pojo-accessibility' ),
 			'type'    => self::FIELD_SELECT,
 			'class'   => $toolbar_options_classes,
@@ -237,15 +259,15 @@ class Pojo_A11y_Settings {
 			'std'     => 'enable',
 			'sanitize_callback' => [ $this, 'sanitize_enabled_disabled' ],
 		];
-
+		
 		$fields[] = [
-			'id'    => 'pojo_a11y_toolbar_button_readable_font_title',
-			'title' => __( 'OpenDyslexic Font Title', 'pojo-accessibility' ),
-			'type'  => self::FIELD_TEXT,
-			'class' => $toolbar_options_classes . ' pojo-settings-child-row',
-			'std'   => __( 'OpenDyslexic Font', 'pojo-accessibility' ),
-			'sanitize_callback' => 'sanitize_text_field',
-		];
+            'id'    => 'pojo_a11y_toolbar_button_opendyslexic_title',
+            'title' => __( 'OpenDyslexic Font Title', 'pojo-accessibility' ),
+            'type'  => self::FIELD_TEXT,
+            'class' => $toolbar_options_classes . ' pojo-settings-child-row',
+            'std'   => __( 'OpenDyslexic', 'pojo-accessibility' ),
+            'sanitize_callback' => 'sanitize_text_field',
+        ];
 
 		$fields[] = [
 			'id'    => 'pojo_a11y_toolbar_button_sitemap_title',
