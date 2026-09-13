@@ -1,7 +1,7 @@
 /*!
  * @author: One Click Accessibility 2 Fork
- * @version: 2.2.6
- * @modified: 2026-03-29
+ * @version: 2.2.8
+ * @modified: 2026-09-13
  */
 /* global jQuery, PojoA11yOptions */
 
@@ -144,8 +144,10 @@
 
 				if ( deactivate ) {
 					this.variables.currentFontSize = this.settings.minFontSize;
+                    this.cache.$body.removeClass( 'pojo-a11y-font-reset' );
 				}
-
+                
+                // For normal size changes
 				this.cache.$body.removeClass( this.settings.bodyFontClassPrefix + oldFontSize );
 
 				var isPlusActive = 120 < this.variables.currentFontSize,
@@ -154,6 +156,7 @@
 				this.getButtonByAction( 'resize-plus' )[ plusButtonAction ]( 'active' );
 
 				if ( isPlusActive ) {
+				    this.cache.$body.addClass('pojo-a11y-font-reset');
 					this.cache.$body.addClass( this.settings.bodyFontClassPrefix + this.variables.currentFontSize );
 				}
 
