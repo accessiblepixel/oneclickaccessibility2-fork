@@ -594,7 +594,7 @@ body.pojo-a11y-readable-font *:not(i):not(span) {
         url('../fonts/opendyslexic/OpenDyslexicMono-Regular.ttf') format('truetype');
 }
 body.pojo-a11y-opendyslexic,
-body.pojo-a11y-opendyslexic *:not(#pojo-a11y-toolbar):not(#pojo-a11y-toolbar *) {
+body.pojo-a11y-opendyslexic *:not(i):not(span):not(#pojo-a11y-toolbar):not(#pojo-a11y-toolbar *) {
     font-family: 'OpenDyslexic', Verdana, Arial, Helvetica, sans-serif;
     font-weight: inherit
 }
@@ -612,7 +612,8 @@ body.pojo-a11y-opendyslexic h6 {
 
 /* Apply to code blocks and inline code */
 body.pojo-a11y-opendyslexic code, 
-body.pojo-a11y-opendyslexic pre {
+body.pojo-a11y-opendyslexic pre,
+body.pojo-a11y-opendyslexic .CodeMirror-code {
     font-family: 'OpenDyslexic Mono', 'Courier New', Courier, monospace !important
 }
 
@@ -624,6 +625,10 @@ body.pojo-a11y-opendyslexic strong {
 body.pojo-a11y-opendyslexic em, 
 body.pojo-a11y-opendyslexic i {
     font-style: italic;
+}
+
+body.pojo-a11y-opendyslexic .fa {
+    font-style: normal;
 }
 
 /* --------- */
