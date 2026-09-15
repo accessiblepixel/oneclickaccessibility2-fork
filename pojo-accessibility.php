@@ -4,7 +4,7 @@
  * Plugin Name:       One Click Accessibility 2 Fork
  * Plugin URI:        https://oneclickaccessibility.com
  * Description:       The 'One Click Accessibility' fork without the online account and GDPR implications of the Elementor version. Designed help you make your WordPress website more accessible.
- * Version:           2.2.9.1
+ * Version:           2.2.9.2
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Tested up to:      7.1
@@ -33,7 +33,6 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 //Set the branch that contains the development release.
 $myUpdateChecker->setBranch('dev');
 
-}
 
 define( 'POJO_A11Y__FILE__', __FILE__ );
 define( 'POJO_A11Y_BASE', plugin_basename( POJO_A11Y__FILE__ ) );
