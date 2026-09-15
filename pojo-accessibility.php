@@ -24,22 +24,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 require_once 'modules/plugin-update-checker/plugin-update-checker.php';
 
-define( 'DEVELOPMENT_VERSION', true);
-
-if ( ! defined ('DEVELOPMENT_VERSION') ) {
-
-/*  Stable Updates from OCA2 Website */
-
-$myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://oneclickaccessibility.com/update.json',
-	__FILE__, //Full path to the main plugin file or functions.php.
-	'oneclickaccessibility'
-);
-
-} else {
-
-/* Development Updates from Github */
-
 $myUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://github.com/accessiblepixel/oneclickaccessibility2-fork/',
 	__FILE__,
