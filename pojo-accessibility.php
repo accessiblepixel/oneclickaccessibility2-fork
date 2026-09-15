@@ -20,10 +20,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-require 'modules/plugin-update-checker/plugin-update-checker.php';
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
-/* Development */
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+require_once 'modules/plugin-update-checker/plugin-update-checker.php';
+
+define( 'DEVELOPMENT_VERSION', true);
+
+if ( ! defined ('DEVELOPMENT_VERSION') ) {
+
+/*  Stable Updates from OCA2 Website */
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://oneclickaccessibility.com/update.json',
+	__FILE__, //Full path to the main plugin file or functions.php.
+	'oneclickaccessibility'
+);
+
+} else {
+
+/* Development Updates from Github */
+
 $myUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://github.com/accessiblepixel/oneclickaccessibility2-fork/',
 	__FILE__,
@@ -33,16 +49,7 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 //Set the branch that contains the development release.
 $myUpdateChecker->setBranch('dev');
 
-/* Stable
-require 'modules/plugin-update-checker/plugin-update-checker.php';
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
-
-$myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://oneclickaccessibility.com/update.json',
-	__FILE__, //Full path to the main plugin file or functions.php.
-	'oneclickaccessibility'
-);
-*/
+}
 
 define( 'POJO_A11Y__FILE__', __FILE__ );
 define( 'POJO_A11Y_BASE', plugin_basename( POJO_A11Y__FILE__ ) );
