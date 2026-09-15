@@ -39,9 +39,6 @@ $myUpdateChecker->setBranch('dev');
 
 } else {
 
-require 'modules/plugin-update-checker/plugin-update-checker.php';
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
-
 $myUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://oneclickaccessibility.com/update.json',
 	__FILE__, //Full path to the main plugin file or functions.php.
