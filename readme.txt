@@ -22,17 +22,17 @@ If you find you’re using this, please tell your friends to consider using the 
 
 = 2.2.8 - 2026-08-10 =
 
-* Chore: Tested with WordPress 7.0.3 and 7.1 and confirmed support. No code changes. I won't be packaging a new release until there are actual changes, but this update confirms that WP 7.0 and WP 7.1 is supported until that happens.
-* Chore: Update readme and fixed typos.
+* **Chore:** Tested with WordPress 7.0.3 and 7.1 and confirmed support. No code changes. I won't be packaging a new release until there are actual changes, but this update confirms that WP 7.0 and WP 7.1 is supported until that happens.
+* **Chore:** Update readme and fixed typos.
 
 = 2.2.7 - 2026-04-01 =
 
-* Improved: Developer quality of life feature request, allow text input for picking colours. #3
-* Improved: Now you can specify the size (in px) of the toolbar. Recommended settings are 160-300px. It will let you use a silly value though, so test something sensible. Defaults to the original size of 180px #12
+* **Improved:** Developer quality of life feature request, allow text input for picking colours. #3
+* **Improved:** Now you can specify the size (in px) of the toolbar. Recommended settings are 160-300px. It will let you use a silly value though, so test something sensible. Defaults to the original size of 180px #12
 
 = 2.2.6 - 2026-03-29 =
 
-* Fixed: If text zoom steps haven't been set, now it works at it should, and defaults to the maximum. #8
+* **Fixed:** If text zoom steps haven't been set, now it works at it should, and defaults to the maximum. #8
 
 = 2.2.5 - 2025-10-23 =
 
