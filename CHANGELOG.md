@@ -1,6 +1,14 @@
 ## Changelog
 
-#### 2.2.8 - 2026-08-10
+#### 2.2.8 - 2026-09-15
+This release will be a major update, that might break styles. Please test before deploying.
+
+* **New:** Update check functionality, meaning that even if we're never able to get listed in the WP Plugins site, people can one click upgrade again.
+* **Improved:** OpenDyslexic: Updated to latest version, and added the Bold/Italic/BoldItalic and Monospace versions.
+* **Improved:** CSS: vastly reduced and optimised. Using global selector used to be slow, but now browsers handle it fine, and it makes maintanance easier for me.
+* **Improved:** CSS: Improved High Contrast and Negative Contrast themes.
+* **Improved:** CSS: text-zoom fixes to use 'em' rather than a percentage. Which (hopefully) fixes layered tags getting multiple zoom steps applied to them.
+* **Improved:** Readded 'Readable Font' option, now with an appropriate toggle with OpenDyslexic so both options can't be enabled at the same time.
 * **Chore:** Tested with WordPress 7.0.3 and 7.1 and confirmed support. No code changes. I won't be packaging a new release until there are actual changes, but this update confirms that WP 7.0 and WP 7.1 is supported until that happens.
 * **Chore:** Update readme and fixed typos.
 
