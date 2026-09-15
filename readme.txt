@@ -19,8 +19,16 @@ If you find you’re using this, please tell your friends to consider using the 
 
 == Changelog ==
 
-= 2.2.8 - 2026-08-10 =
+= 2.2.8 - 2026-09-15 =
 
+This release will be a major update, that might break styles. Please test before deploying.
+
+* **New:** Update check functionality, meaning that even if we're never able to get listed in the WP Plugins site, people can one click upgrade again.
+* **Improved:** OpenDyslexic: Updated to latest version, and added the Bold/Italic/BoldItalic and Monospace versions.
+* **Improved:** CSS: vastly reduced and optimised. Using global selector used to be slow, but now browsers handle it fine, and it makes maintanance easier for me.
+* **Improved:** CSS: Improved High Contrast and Negative Contrast themes.
+* **Improved:** CSS: text-zoom fixes to use 'em' rather than a percentage. Which (hopefully) fixes layered tags getting multiple zoom steps applied to them.
+* **Improved:** Readded 'Readable Font' option, now with an appropriate toggle with OpenDyslexic so both options can't be enabled at the same time.
 * **Chore:** Tested with WordPress 7.0.3 and 7.1 and confirmed support. No code changes. I won't be packaging a new release until there are actual changes, but this update confirms that WP 7.0 and WP 7.1 is supported until that happens.
 * **Chore:** Update readme and fixed typos.
 
@@ -35,13 +43,13 @@ If you find you’re using this, please tell your friends to consider using the 
 
 = 2.2.5 - 2025-10-23 =
 
-* Fixed: Incorrect alignment of underlined links in the menu #9
+* **Fixed:** Incorrect alignment of underlined links in the menu #9
 
 = 2.2.4 - 2025-09-21 =
 
 * **Improved:** Added serialisation and sanitisation to the new option to control font size, it wasn't being validated.
 * **Improved:** Made the SVG icons have a description that's the same as a title. The way I've done it is a bit of a bodge and in future may want to add a separate field to admin to have a different description to title. Thanks @mve83 on e#72 for pointing this out.
-* Improved: Made the steps for text size make more intuitive sense, and moved to 'Toolbar' page near the relevant option.
+* **Improved:** Made the steps for text size make more intuitive sense, and moved to 'Toolbar' page near the relevant option.
 
 = 2.2.3 - 2025-09-20 =
 
