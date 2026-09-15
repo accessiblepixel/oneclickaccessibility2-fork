@@ -20,6 +20,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 } 
 
+require 'modules/plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/accessiblepixel/oneclickaccessibility2-fork/',
+	__FILE__,
+	'oneclickaccessibility'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('dev');
+
+
 define( 'POJO_A11Y__FILE__', __FILE__ );
 define( 'POJO_A11Y_BASE', plugin_basename( POJO_A11Y__FILE__ ) );
 define( 'POJO_A11Y_URL', plugins_url( '/', POJO_A11Y__FILE__ ) );
