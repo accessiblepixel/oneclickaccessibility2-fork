@@ -114,6 +114,7 @@ final class Pojo_A11y_Frontend {
         width: <?php echo $toolbar_width; ?>;
         }
         </style>
+        <div id="pojo-a11y-toolbar-tap-target"></div>
         <?php
 		
 		$toolbar_title = Pojo_Accessibility::$instance->settings->get_default_title_text( 'pojo_a11y_toolbar_title' );
