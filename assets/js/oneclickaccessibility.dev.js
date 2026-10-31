@@ -1,7 +1,7 @@
 /*!
  * @author: One Click Accessibility 2 Fork
- * @version: 2.2.8
- * @modified: 2026-09-13
+ * @version: 2.3.x?
+ * @modified: 2026-10-31
  */
 /* global jQuery, PojoA11yOptions */
 
@@ -11,7 +11,8 @@
 	var Pojo_Accessibility_App = {
 		cache: {
 			$document: $( document ),
-			$window: $( window )
+			$window: $( window ),
+			lastFocusedElement: null
 		},
 
 		cacheElements: function() {
@@ -50,7 +51,10 @@
 
 		bindEvents: function() {
 			var $self = this;
-
+			
+            $self.cache.$btnToolbarToggle.on('click', function() {
+                $self.cache.lastFocusedElement = document.activeElement;
+            });
 			$self.cache.$btnToolbarToggle.on( 'click', function( event ) {
 				event.preventDefault();
 
@@ -72,8 +76,10 @@
 				$self.cache.$toolbar.addClass( 'pojo-a11y-toolbar-open' );
 				$self.cache.$toolbarLinks.attr( 'tabindex', '0' );
 			} );
+            $self.bindOutsideClick();
+            $self.bindEscapeKey();
 
-			$self.bindToolbarButtons();
+            $self.bindToolbarButtons();
 		},
 
 		bindToolbarButtons: function() {
@@ -284,6 +290,40 @@
 				$( 'a' ).attr( 'role', 'link' );
 			}
 		},
+		
+        bindOutsideClick: function() {
+            var self = this;
+            $( document ).on( 'click', function( event ) {
+                // If the click is NOT on the toolbar and NOT on the toggle button
+                if ( !self.cache.$toolbar.is(event.target) && 
+                     self.cache.$toolbar.has(event.target).length === 0 &&
+                     !self.cache.$btnToolbarToggle.is(event.target) &&
+                     self.cache.$btnToolbarToggle.has(event.target).length === 0 ) {
+                    self.closeToolbar();
+                }
+            });
+        },
+        bindEscapeKey: function() {
+            var self = this;
+            $( document ).on( 'keydown', function( event ) {
+                if ( event.key === "Escape" ) {
+                    self.closeToolbar();
+                }
+            });
+        },
+
+        closeToolbar: function() {
+            var self = this;
+            if ( self.cache.$toolbar.hasClass('pojo-a11y-toolbar-open') ) {
+                self.cache.$toolbar.removeClass('pojo-a11y-toolbar-open');
+                self.cache.$toolbarLinks.attr('tabindex', '-1');
+                
+                // Return focus to the button that opened it
+                if ( self.cache.lastFocusedElement ) {
+                    self.cache.lastFocusedElement.focus();
+                }
+            }
+        },
 
 		init: function() {
 			this.cacheElements();
