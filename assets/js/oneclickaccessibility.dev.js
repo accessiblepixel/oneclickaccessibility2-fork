@@ -17,6 +17,7 @@
 
 		cacheElements: function() {
 			this.cache.$toolbar = $( '#pojo-a11y-toolbar' );
+			this.cache.$taptarget = $( '#pojo-a11y-toolbar-tap-target');
 			this.cache.$toolbarLinks = this.cache.$toolbar.find( 'a.pojo-a11y-toolbar-link' );
 			this.cache.$toolbarToolsLinks = this.cache.$toolbar.find( '.pojo-a11y-tools a.pojo-a11y-toolbar-link' );
 			this.cache.$btnToolbarToggle = this.cache.$toolbar.find( 'div.pojo-a11y-toolbar-toggle > a' );
@@ -59,6 +60,7 @@
 				event.preventDefault();
 
 				$self.cache.$toolbar.toggleClass( 'pojo-a11y-toolbar-open' );
+				$self.cache.$taptarget.toggleClass( 'pojo-a11y-tap-target-active' );
 
 				if ( $self.cache.$toolbar.hasClass( 'pojo-a11y-toolbar-open' ) ) {
 					$self.cache.$toolbarLinks.attr( 'tabindex', '0' );
@@ -319,6 +321,7 @@
 			var self = this;
 			if ( self.cache.$toolbar.hasClass('pojo-a11y-toolbar-open') ) {
 				self.cache.$toolbar.removeClass('pojo-a11y-toolbar-open');
+				self.cache.$taptarget.removeClass('pojo-a11y-tap-target-active');
 				self.cache.$toolbarLinks.attr('tabindex', '-1');
 				// Return focus to the button that opened it
 				if ( self.cache.lastFocusedElement ) {
