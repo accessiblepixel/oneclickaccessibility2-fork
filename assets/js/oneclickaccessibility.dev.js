@@ -178,7 +178,6 @@
 				var currentSchema = this.variables.currentSchema;
 
 				if ( currentSchema ) {
-				    console.log ( currentSchema );
 					this.cache.$html.removeClass( this.settings.bodyClassPrefix + currentSchema );
 					this.getButtonByAction( currentSchema ).removeClass( 'active' );
 					this.activeActions[ currentSchema ] = false;
