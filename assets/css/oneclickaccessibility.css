@@ -472,14 +472,31 @@ body.pojo-a11y-font-reset * {
     font-size: 1em; 
 }
 
-/* Bigger Headings */
-body.pojo-a11y-font-reset h1,
-body.pojo-a11y-font-reset h2,
-body.pojo-a11y-font-reset h3,
-body.pojo-a11y-font-reset h4,
-body.pojo-a11y-font-reset h5,
+/* Scaling Headings by the Base Size */
+body.pojo-a11y-font-reset h1 { 
+    font-size: 2em !important; 
+}
+
+body.pojo-a11y-font-reset h2 {
+    font-size: 1.75em !important;
+}
+
+body.pojo-a11y-font-reset h3 {
+    font-size: 1.5em !important;
+
+}
+
+body.pojo-a11y-font-reset h4 {
+    font-size: 1.25em !important;
+
+}
+
+body.pojo-a11y-font-reset h5 {
+    font-size: 1.1em !important; 
+}
+
 body.pojo-a11y-font-reset h6 {
-    font-size: 2em;
+    font-size: 1.05em !important; 
 }
 
 /* Font Sizes */
