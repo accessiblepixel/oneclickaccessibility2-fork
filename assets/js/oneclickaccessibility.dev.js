@@ -51,7 +51,7 @@
 
 		bindEvents: function() {
 			var $self = this;
-			
+
             $self.cache.$btnToolbarToggle.on('click', function() {
                 $self.cache.lastFocusedElement = document.activeElement;
             });
@@ -69,17 +69,16 @@
 
 			$( document ).on( 'keyup', function( event ) {
 				var TAB_KEY = 9;
-				
+
 				if ( TAB_KEY !== event.which || ! $self.cache.$btnToolbarToggle.is( ':focus' ) ) {
 					return;
 				}
 				$self.cache.$toolbar.addClass( 'pojo-a11y-toolbar-open' );
 				$self.cache.$toolbarLinks.attr( 'tabindex', '0' );
-			} );
-            $self.bindOutsideClick();
-            $self.bindEscapeKey();
-
-            $self.bindToolbarButtons();
+			});
+			$self.bindOutsideClick();
+			$self.bindEscapeKey();
+			$self.bindToolbarButtons();
 		},
 
 		bindToolbarButtons: function() {
@@ -103,7 +102,7 @@
 				}
 
 				self.activateButton( action, deactivate );
-			} );
+			});
 		},
 
 		activateButton: function( action, deactivate ) {
@@ -138,6 +137,7 @@
 
 				this.cache.$body[ fn ]( this.settings.bodyClassPrefix + action );
 			},
+
 			resize: function( action, deactivate ) {
 				var oldFontSize = this.variables.currentFontSize;
 
@@ -153,8 +153,8 @@
 					this.variables.currentFontSize = this.settings.minFontSize;
                     this.cache.$body.removeClass( 'pojo-a11y-font-reset' );
 				}
-                
-                // For normal size changes
+
+				// For normal size changes
 				this.cache.$body.removeClass( this.settings.bodyFontClassPrefix + oldFontSize );
 
 				var isPlusActive = 120 < this.variables.currentFontSize,
@@ -171,6 +171,7 @@
 				this.activeActions[ 'resize-plus' ] = isPlusActive;
 				this.cache.$window.trigger( 'resize' );
 			},
+
 			schema: function( action, deactivate ) {
 				var currentSchema = this.variables.currentSchema;
 
@@ -192,6 +193,7 @@
 				this.cache.$html.addClass( this.settings.bodyClassPrefix + currentSchema );
 				this.getButtonByAction( currentSchema ).addClass( 'active' );
 			},
+
 			font: function( action, deactivate ) {
 				var currentFont = this.variables.currentFont;
 
@@ -290,40 +292,40 @@
 				$( 'a' ).attr( 'role', 'link' );
 			}
 		},
-		
-        bindOutsideClick: function() {
-            var self = this;
-            $( document ).on( 'click', function( event ) {
-                // If the click is NOT on the toolbar and NOT on the toggle button
-                if ( !self.cache.$toolbar.is(event.target) && 
-                     self.cache.$toolbar.has(event.target).length === 0 &&
-                     !self.cache.$btnToolbarToggle.is(event.target) &&
-                     self.cache.$btnToolbarToggle.has(event.target).length === 0 ) {
-                    self.closeToolbar();
-                }
-            });
-        },
-        bindEscapeKey: function() {
-            var self = this;
-            $( document ).on( 'keydown', function( event ) {
-                if ( event.key === "Escape" ) {
-                    self.closeToolbar();
-                }
-            });
-        },
 
-        closeToolbar: function() {
-            var self = this;
-            if ( self.cache.$toolbar.hasClass('pojo-a11y-toolbar-open') ) {
-                self.cache.$toolbar.removeClass('pojo-a11y-toolbar-open');
-                self.cache.$toolbarLinks.attr('tabindex', '-1');
-                
-                // Return focus to the button that opened it
-                if ( self.cache.lastFocusedElement ) {
-                    self.cache.lastFocusedElement.focus();
-                }
-            }
-        },
+		bindOutsideClick: function() {
+			var self = this;
+			$( document ).on( 'click', function( event ) {
+				// If the click is NOT on the toolbar and NOT on the toggle button
+				if ( !self.cache.$toolbar.is(event.target) &&
+					self.cache.$toolbar.has(event.target).length === 0 &&
+					!self.cache.$btnToolbarToggle.is(event.target) &&
+					self.cache.$btnToolbarToggle.has(event.target).length === 0 ) {
+						self.closeToolbar();
+				}
+			});
+		},
+
+		bindEscapeKey: function() {
+			var self = this;
+			$( document ).on( 'keydown', function( event ) {
+				if ( event.key === "Escape" ) {
+					self.closeToolbar();
+				}
+			});
+		},
+
+		closeToolbar: function() {
+			var self = this;
+			if ( self.cache.$toolbar.hasClass('pojo-a11y-toolbar-open') ) {
+				self.cache.$toolbar.removeClass('pojo-a11y-toolbar-open');
+				self.cache.$toolbarLinks.attr('tabindex', '-1');
+				// Return focus to the button that opened it
+				if ( self.cache.lastFocusedElement ) {
+					self.cache.lastFocusedElement.focus();
+				}
+			}
+		},
 
 		init: function() {
 			this.cacheElements();
@@ -336,6 +338,6 @@
 	$( document ).ready( function( $ ) {
 		Pojo_Accessibility_App.init();
 		Pojo_Accessibility_App.setFromLocalStorage();
-	} );
+	});
 
 }( jQuery, window, document ) );
