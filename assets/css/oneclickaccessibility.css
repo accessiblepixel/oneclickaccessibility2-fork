@@ -1,4 +1,4 @@
-/*! One Click Accessibility 2 Fork v2.2.8 - 2026-09-13 */
+/*! One Click Accessibility 2 Fork v2.3.x - 2026-10-31 */
 
 #pojo-a11y-toolbar {
     position: fixed;
@@ -6,6 +6,18 @@
     line-height: 1.4;
     z-index: 9999;
     font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#pojo-a11y-toolbar-tap-target {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 9998;
+	display: none;
+	pointer-events: none;
 }
 
 #pojo-a11y-toolbar.pojo-a11y-toolbar-right {
@@ -118,6 +130,27 @@
         display: block;
         padding: 7px 12px;
     }
+	
+	#pojo-a11y-toolbar-tap-target.pojo-a11y-tap-target-active {
+		display: block;
+		pointer-events: auto;
+    }
+    
+	.pojo-a11y-hidden-desktop {
+		display: inherit !important;
+    }
+
+	.pojo-a11y-visible-desktop {
+		display: none !important;
+    }
+
+    .pojo-a11y-visible-phone {
+        display: inherit !important;
+    }
+	
+	.pojo-a11y-hidden-phone {
+    display: none !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -138,24 +171,6 @@
     }
 }
 
-@media (max-width: 767px) {
-    .pojo-a11y-hidden-desktop {
-        display: inherit !important;
-    }
-
-    .pojo-a11y-visible-desktop {
-        display: none !important;
-    }
-
-    .pojo-a11y-visible-phone {
-        display: inherit !important;
-    }
-
-    /* Use inherit to restore previous behavior */
-    .pojo-a11y-hidden-phone {
-    display: none !important;
-    }
-}
 
 /* ----------------- */
 /* Grayscale Queries */
