@@ -1,6 +1,6 @@
 ## Changelog
 
-#### 2.3.x - 2026-10-31
+#### 2.3.x - 2026-11-08
 
 **This release will be a major update, that might break styles. Please test before deploying.**
 
@@ -10,14 +10,15 @@ With all that said, this plugin isn't to just "do" accessibility, it's to help g
 
 If you have any ideas on improvements, issues and pull requests are open and are welcome. I am just one person, but I'll always do my best to handle any requests or suggestions. :)
 
+* **Fix*** Hopefully fixes #27 and Light Background with waveform player, and the active link colour within the toolbar when using 'light background' [#27](https://github.com/accessiblepixel/oneclickaccessibility2-fork/issues/27)
 * **New:** Toolbar will close when clicking/tapping on something that's not the toolbar, and there's a background overlay to prevent accidentally tapping something on mobile while the toolbar is open.
 * **New:** Update check functionality, meaning that even if we're never able to get listed in the WP Plugins site, people can one click upgrade again.
 * **Improved:** OpenDyslexic: Updated to latest version, and added the Bold/Italic/BoldItalic and Monospace versions.
 * **Improved:** CSS: vastly reduced and optimised. Using a global selector used to be slow, but now browsers handle it fine, and it makes maintenance easier for me.
 * **Improved:** CSS: Improved High Contrast and Negative Contrast themes.
-* **Improved:** CSS: text-zoom fixes to use 'em' rather than a percentage. Which (hopefully) fixes layered tags getting multiple zoom steps applied to them.
+* **Improved:** CSS: text-zoom fixes to use 'em' rather than a percentage. Which (hopefully) fixes layered tags getting multiple zoom steps applied to them. [#21](https://github.com/accessiblepixel/oneclickaccessibility2-fork/issues/21)
 * **Improved:** Headings now scale, they were all set to the same size (a CSS specificity problem) now they should at least be slightly visually different when changing text size.
-* **Improved:** Readded 'Readable Font' option, now with an appropriate toggle with OpenDyslexic so both options can't be enabled at the same time.
+* **Improved:** Re-added 'Readable Font' option, now with an appropriate toggle with OpenDyslexic so both options can't be enabled at the same time.
 * **Chore:** Tested with WordPress 7.0.3 and 7.1 and confirmed support. No code changes. I won't be packaging a new release until there are actual changes, but this update confirms that WP 7.0 and WP 7.1 is supported until that happens.
 * **Chore:** Update readme and fixed typos.
 
